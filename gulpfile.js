@@ -1,4 +1,5 @@
 var gulp = require('gulp'),
+    browserSync = require('browser-sync'),
     pl = require('gulp-load-plugins')({
         lazy: false
     });
@@ -7,8 +8,9 @@ var paths = {
     'css': 'app/css/*.css',
     'scss': 'app/scss/*.scss',
     'html': 'app/*.html',
-    'jade': 'app/markups/_pages*.jade',
-    'sprite': 'app/img/sprites/*.png'
+    'jade': 'app/markups/_pages/*.jade',
+    'sprite': 'app/img/sprites/*.png',
+    'js': 'app/js/*.js'
 };
 
 //Sprites
@@ -93,7 +95,7 @@ gulp.task('sass', function(){
 
 //Server
 gulp.task('server', function(){
-    pl.browserSync({
+    browserSync({
         port: 9000,
         server: {
             baseDir: 'app'
@@ -103,14 +105,13 @@ gulp.task('server', function(){
 
 //Watch
 gulp.task('watch', function(){
-    gulp.watch(paths.jade, ['jade']);
+    gulp.watch('app/markups/_common/*.jade', ['jade']);
     gulp.watch([
-        'app/*.html',
-        'app/*.php',
-        'app/js/*.js',
-        'app/css/*.css'
-    ]).on('change', pl.browserSync.reload);
+        paths.html,
+        paths.js,
+        paths.css
+    ]).on('change', browserSync.reload);
 });
 
 //Default
-gulp.task('default', ['prefix', 'server', 'watch']);
+gulp.task('default', ['server', 'watch']);

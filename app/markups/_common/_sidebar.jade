@@ -1,0 +1,51 @@
+//Сайдбар
+aside.sidebar
+    //Аккордеон
+    ul.accordion-list
+        //Наличие
+        li.accordion-list__item
+            .sidebar-list-title Наличие в магазинах
+            - var shops = {'all-shops': 'Во всех магазинах','local-shops': 'В ближайшем ко мне магазине'}
+            ul.sidebar-list
+                each value, key in shops
+                    li.sidebar-list__item
+                        input(type="radio" name="shop" id="input-#{key}" class="sidebar-list__input sidebar-list__input_radio")
+                        label(for="input-#{key}" class="sidebar-list__label") #{value}
+        //Бренды
+        li.accordion-list__item
+            .sidebar-list-title Бренды
+            - var brends = ['lenovo', 'apple', 'samsung', 'asus', 'motorola']
+            ul.sidebar-list
+                each brend in brends
+                    li.sidebar-list__item
+                        input(type="checkbox" name="#{brend}" id="input-#{brend}" class="sidebar-list__input sidebar-list__input_box")
+                        label(for="input-#{brend}" class="sidebar-list__label sidebar-list__label_upper") #{brend}
+            a(href="#" class="clear-filter") Сбросить фильтры
+        //Цена
+        li.accordion-list__item
+            .sidebar-list-title Цена
+            - var prise = {'from': 'от', 'to': 'до'}
+            ul.sidebar-list
+                each text, key in prise
+                    li.sidebar-list__item
+                        input(type="text" name="#{key}" id="input-#{key}" class="sidebar-list__input sidebar-list__input_text")
+                        label(for="input-#{key}" class="sidebar-list__label sidebar-list__label_upper") #{text}
+                        .prise-slider
+        //Цвет
+        li.accordion-list__item
+            .sidebar-list-title Цвет
+            - var colors = ['white', 'gray', 'black', 'dark-blue', 'red', 'yellow', 'orange', 'green', 'blue', 'violet', 'pink', 'brown']
+            ul.sidebar-list
+                each color in colors
+                    li.sidebar-list__item
+                        .color(class="color_#{color}")
+        //Операционные система
+        li.accordion-list__item
+            .sidebar-list-title Операционные система
+            - var systems = {'android': 'Android', 'ios': 'iOS', 'windows': 'Windows Phone', 'symbian': 'Symbian', 'custom': 'Custom'}
+            ul.sidebar-list
+                each system, key in systems
+                    li.sidebar-list__item
+                        input(type="checkbox" name="#{key}" id="input-#{key}" class="sidebar-list__input sidebar-list__input_box")
+                        label(for="input-#{key}" class="sidebar-list__label sidebar-list__label_upper") #{system}
+            a(href="#" class="clear-filter") Сбросить фильтры
