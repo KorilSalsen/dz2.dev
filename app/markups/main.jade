@@ -4,12 +4,16 @@ html(lang='ru')
         meta(charset='UTF-8')
         meta(http-equiv='X-UA-Compatible', content="IE=edge,chrome=1")
         meta(name='viewport' content='width=device-width')
+        link(rel="stylesheet" href="/css/main.css")
         block title
     body
         .page-wrapper
             header.main-header
-                include _common/_header-top
-                include _common/_header-bottom
-                include _common/_header-nav
+                .main-header__inner
+                    include _common/_header/_header-top
+                    include _common/_header/_header-bottom
+                    include _common/_header/_header-nav
             section.page
                 block page
+        footer.footer
+            include _common/_footer/_footer

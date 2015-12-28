@@ -1,0 +1,22 @@
+//Футер
+.footer__info
+    //Лого
+    a(href="index.html" title="Главная страница" class="logo") cooltech
+        img(src="img/logo-footer.png" alt="Logo" class="logo__img")
+    //Социалки
+    .socials(class ="socials_footer")
+        - var socials = {'fb':'Facebook', 'vk':'Вконтакте', 'tw':'Twitter'}
+        ul.socials__list
+            each social, key in socials
+                li.socials__item
+                    a(href="#" class="socials__link socials__link_#{key}-footer socials__link_#{key}" title="Сылка на #{social}") Сылка на #{social}
+    //Навигация в футере
+    nav.navigate(class="navigate_footer")
+        - var navText = ['Планшеты', 'Мобильные телефоны', 'Мр3 плееры', 'Персональные компьютеры', 'Ноутбуки', 'Аксессуары', 'Бытовая техника']
+        ul.nav__list
+            each text in navText
+                li.nav__item
+                    a(href="#" class="nav__link nav__link_footer" title="#{text}") #{text}
+//Копирайт
+.footer__copyright
+    p.footer__copyright-text All rights reserved. 2015. no copy alowed

@@ -4,65 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/css/main.css">
     <title>Магазин электроники</title>
   </head>
   <body>
     <div class="page-wrapper">
       <header class="main-header">
-        <!--Верхняя часть хедера-->
-        <div class="header-top">
-          <!--Социалки-->
-          <ul class="social-list">
-            <li class="social-list__item"><a href="#" title="Сылка на Facebook" class="social-list__link social-list__link_fb">Сылка на Facebook</a></li>
-            <li class="social-list__item"><a href="#" title="Сылка на Вконтакте" class="social-list__link social-list__link_vk">Сылка на Вконтакте</a></li>
-            <li class="social-list__item"><a href="#" title="Сылка на Twitter" class="social-list__link social-list__link_tw">Сылка на Twitter</a></li>
-          </ul>
-          <!--Контакты-->
-          <ul class="contacts-list">
-            <li class="contacts-list__item"><a href="#" title="ул. Маяковская 6, офис 17" class="contacts-list__link contacts-list__link_map">ул. Маяковская 6, офис 17</a></li>
-            <li class="contacts-list__item"><a href="#" title="+7 (921) 123-12-13" class="contacts-list__link contacts-list__link_telephone">+7 (921) 123-12-13</a></li>
-          </ul>
+        <div class="main-header__inner">
+          <!--Верхняя часть хедера-->
+          <div class="header-top">
+            <div class="header-top__wrapper">
+              <!--Социалки-->
+              <div class="socials">
+                <ul class="socials__list">
+                  <li class="socials__item"><a href="#" title="Сылка на Facebook" class="socials__link socials__link_fb">Сылка на Facebook</a></li>
+                  <li class="socials__item"><a href="#" title="Сылка на Вконтакте" class="socials__link socials__link_vk">Сылка на Вконтакте</a></li>
+                  <li class="socials__item"><a href="#" title="Сылка на Twitter" class="socials__link socials__link_tw">Сылка на Twitter</a></li>
+                </ul>
+              </div>
+              <!--Контакты-->
+              <div class="contacts">
+                <ul class="contacts__list">
+                  <li class="contacts__item"><a href="#" title="ул. Маяковская 6, офис 17" class="contacts__link contacts__link_map">ул. Маяковская 6, офис 17</a></li>
+                  <li class="contacts__item"><a href="#" title="+7 (921) 123-12-13" class="contacts__link contacts__link_telephone">+7 (921) 123-12-13</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--Нижняя часть хедера-->
+          <div class="header-bottom">
+            <div class="header-bottom__wrapper">
+              <!--Лого--><a href="index.html" title="Главная страница" class="logo">cooltech<img src="img/logo.png" alt="Logo" class="logo__img"></a>
+              <!--Поиск-->
+              <form action="/" method="post" class="search">
+                <input type="text" name="search-text" placeholder="Что будем искать?" class="search__text">
+                <button class="search__submit">Найти</button>
+              </form>
+              <!--Ссылки-->
+              <div class="links">
+                <ul class="links__list">
+                  <li class="links__item"><a href="#" title="Карта проезда" class="links__link">Карта проезда</a></li>
+                  <li class="links__item"><a href="#" title="История заказов" class="links__link">История заказов</a></li>
+                  <li class="links__item"><a href="#" title="Корзина" class="links__link">Корзина</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--Навигация в хедере-->
+          <div class="header-nav">
+            <nav class="navigate">
+              <ul class="navigate__list">
+                <li class="navigate__item"><a href="#" title="Планшеты" class="navigate__link">Планшеты</a></li>
+                <li class="navigate__item"><a href="#" title="Мобильные телефоны" class="navigate__link navigate__link_active">Мобильные телефоны</a></li>
+                <li class="navigate__item"><a href="#" title="Мр3 плееры" class="navigate__link">Мр3 плееры</a></li>
+                <li class="navigate__item"><a href="#" title="Персональные компьютеры" class="navigate__link">Персональные компьютеры</a></li>
+                <li class="navigate__item"><a href="#" title="Ноутбуки" class="navigate__link">Ноутбуки</a></li>
+                <li class="navigate__item"><a href="#" title="Аксессуары" class="navigate__link">Аксессуары</a></li>
+                <li class="navigate__item"><a href="#" title="Бытовая техника" class="navigate__link">Бытовая техника</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <!--Нижняя часть хедера-->
-        <div class="header-bottom">
-          <!--Лого--><a href="index.html" title="Главная страница" class="logo"><img src="img/logo.png" alt="Logo" class="logo__img"></a>
-          <!--Поиск-->
-          <form class="search">
-            <input type="text" name="search-text" placeholder="Что будем искать?" class="search__text">
-            <button class="search__submit">Найти</button>
-          </form>
-          <!--Ссылки-->
-          <ul class="link-list">
-            <li class="link-list__item"><a href="#" title="Карта проезда" class="link-list__link">Карта проезда</a></li>
-            <li class="link-list__item"><a href="#" title="История заказов" class="link-list__link">История заказов</a></li>
-            <li class="link-list__item"><a href="#" title="Корзина" class="link-list__link">Корзина</a></li>
-          </ul>
-        </div>
-        <!--Навигация в хедере-->
-        <nav class="navigate">
-          <ul class="nav-list">
-            <li class="nav-list__item"><a href="#" title="Планшеты" class="nav-list__link">Планшеты</a></li>
-            <li class="nav-list__item"><a href="#" title="Мобильные телефоны" class="nav-list__link">Мобильные телефоны</a></li>
-            <li class="nav-list__item"><a href="#" title="Мр3 плееры" class="nav-list__link">Мр3 плееры</a></li>
-            <li class="nav-list__item"><a href="#" title="Персональные компьютеры" class="nav-list__link">Персональные компьютеры</a></li>
-            <li class="nav-list__item"><a href="#" title="Ноутбуки" class="nav-list__link">Ноутбуки</a></li>
-            <li class="nav-list__item"><a href="#" title="Аксессуары" class="nav-list__link">Аксессуары</a></li>
-            <li class="nav-list__item"><a href="#" title="Бытовая техника" class="nav-list__link">Бытовая техника</a></li>
-          </ul>
-        </nav>
       </header>
       <section class="page">
         <!--Хлебные крошки-->
         <div class="breadcrumps">
-          <ul class="breadcrumb-list">
-            <li class="breadcrumb-list__item"><a href="#" title="Главная" class="breadcrumb-list__link">Главная</a></li>
-            <li class="breadcrumb-list__item"><a href="#" title="Каталог" class="breadcrumb-list__link">Каталог</a></li>
+          <ul class="breadcrumb__list">
+            <li class="breadcrumb__item"><a href="#" title="Главная" class="breadcrumb__link">Главная</a></li>
+            <li class="breadcrumb__item"><a href="#" title="Каталог" class="breadcrumb__link">Каталог</a></li>
           </ul>
           <!--Заголовок каталога-->
           <div class="catalog-title">Мобильные телефоны</div>
         </div>
         <!--Сайдбар-->
         <aside class="sidebar">
+          <!--Класс телефона-->
+          <ul class="phone-classes-list">
+            <li class="phone-classes-list">Флагманы</li>
+            <li class="phone-classes-list">Бюджетная линейка</li>
+          </ul>
           <!--Аккордеон-->
           <ul class="accordion-list">
             <!--Наличие-->
@@ -470,10 +490,134 @@
                   <button class="product-buy__button">В корзину</button>
                 </div>
               </li>
+              <li class="goods__item">
+                <div class="product-slider"><img src="img/products/alcatelOT4013D.jpg" alt="Alcatel OT4013D PIXI 3 (2 SIM)" class="product-slider__main-image">
+                  <ul class="product-slider__min-image-list">
+                    <li class="product-slider__min-image-item"><img src="img/products/alcatelOT4013D-min-left.jpg" alt="Alcatel OT4013D PIXI 3 (2 SIM)" class="product-slider__min-image product-slider__min-image_left"></li>
+                    <li class="product-slider__min-image-item"><img src="img/products/alcatelOT4013D-min-center.jpg" alt="Alcatel OT4013D PIXI 3 (2 SIM)" class="product-slider__min-image product-slider__min-image_center"></li>
+                    <li class="product-slider__min-image-item"><img src="img/products/alcatelOT4013D-min-right.jpg" alt="Alcatel OT4013D PIXI 3 (2 SIM)" class="product-slider__min-image product-slider__min-image_right"></li>
+                  </ul>
+                </div>
+                <div class="product-name">Alcatel OT4013D PIXI 3 (2 SIM)</div>
+                <div class="product-info">
+                  <ul class="product-info__list">
+                    <li class="product-info__item"><span class="product-info__key">Тип SIM-карты</span><span class="product-info__value">Micro-SIM</span></li>
+                    <li class="product-info__item"><span class="product-info__key">Количество SIM-карт</span><span class="product-info__value">2</span></li>
+                    <li class="product-info__item"><span class="product-info__key">Цвет</span><span class="product-info__value">Белый</span></li>
+                    <li class="product-info__item"><span class="product-info__key">ОC</span><span class="product-info__value">Android</span></li>
+                    <li class="product-info__item"><span class="product-info__key">Связь 3G</span><span class="product-info__value">Есть</span></li>
+                    <li class="product-info__item"><span class="product-info__key">4G (LTE)</span><span class="product-info__value">Нет</span></li>
+                    <li class="product-info__item"><span class="product-info__key">GPS-модуль</span><span class="product-info__value">A-GPS</span></li>
+                  </ul>
+                  <div class="product-rating">
+                    <ul class="product-rating__list">
+                      <li class="product-rating__star"></li>
+                      <li class="product-rating__star"></li>
+                      <li class="product-rating__star"></li>
+                      <li class="product-rating__star"></li>
+                      <li class="product-rating__star"></li>
+                    </ul><span class="product-rating__count">4</span>
+                  </div>
+                </div>
+                <div class="product-buy">
+                  <div class="product-buy__price">3 290</div>
+                  <div class="product-buy__stock">
+                    <div class="product-buy__indicator product-buy__indicator_on-stock"></div><span class="product-buy__text">В наличии</span>
+                  </div>
+                  <button class="product-buy__button">В корзину</button>
+                </div>
+              </li>
+              <li class="goods__item">
+                <div class="product-slider"><img src="img/products/flyIQ434.jpg" alt="Fly IQ434 Era Nano 5" class="product-slider__main-image">
+                  <ul class="product-slider__min-image-list">
+                    <li class="product-slider__min-image-item"><img src="img/products/flyIQ434-min-left.jpg" alt="Fly IQ434 Era Nano 5" class="product-slider__min-image product-slider__min-image_left"></li>
+                    <li class="product-slider__min-image-item"><img src="img/products/flyIQ434-min-center.jpg" alt="Fly IQ434 Era Nano 5" class="product-slider__min-image product-slider__min-image_center"></li>
+                    <li class="product-slider__min-image-item"><img src="img/products/flyIQ434-min-right.jpg" alt="Fly IQ434 Era Nano 5" class="product-slider__min-image product-slider__min-image_right"></li>
+                  </ul>
+                </div>
+                <div class="product-name">Fly IQ434 Era Nano 5</div>
+                <div class="product-info">
+                  <ul class="product-info__list">
+                    <li class="product-info__item"><span class="product-info__key">Тип SIM-карты</span><span class="product-info__value">Micro-SIM</span></li>
+                    <li class="product-info__item"><span class="product-info__key">Количество SIM-карт</span><span class="product-info__value">2</span></li>
+                    <li class="product-info__item"><span class="product-info__key">Цвет</span><span class="product-info__value">Черный</span></li>
+                    <li class="product-info__item"><span class="product-info__key">ОC</span><span class="product-info__value">Android</span></li>
+                    <li class="product-info__item"><span class="product-info__key">Связь 3G</span><span class="product-info__value">Нет</span></li>
+                    <li class="product-info__item"><span class="product-info__key">4G (LTE)</span><span class="product-info__value">Нет</span></li>
+                    <li class="product-info__item"><span class="product-info__key">GPS-модуль</span><span class="product-info__value">Нет</span></li>
+                  </ul>
+                  <div class="product-rating">
+                    <ul class="product-rating__list">
+                      <li class="product-rating__star"></li>
+                      <li class="product-rating__star"></li>
+                      <li class="product-rating__star"></li>
+                      <li class="product-rating__star"></li>
+                      <li class="product-rating__star"></li>
+                    </ul><span class="product-rating__count">4</span>
+                  </div>
+                </div>
+                <div class="product-buy">
+                  <div class="product-buy__price">1 790</div>
+                  <div class="product-buy__stock">
+                    <div class="product-buy__indicator product-buy__indicator_on-stock"></div><span class="product-buy__text">В наличии</span>
+                  </div>
+                  <button class="product-buy__button">В корзину</button>
+                </div>
+              </li>
             </ul>
           </div>
+          <!--Страницы-->
+          <nav class="pages-nav">
+            <ul class="pages-nav__list">
+              <li class="pages-nav__item"><</li>
+              <li class="pages-nav__item">1</li>
+              <li class="pages-nav__item">2</li>
+              <li class="pages-nav__item">3</li>
+              <li class="pages-nav__item">></li>
+            </ul>
+          </nav>
         </article>
+        <!--Информация-->
+        <div class="info">
+          <div class="info__title">Важная информация</div>
+          <p class="info__text">Повседневная практика показывает, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. Таким образом консультация с широким активом представляет собой интересный эксперимент проверки модели развития.</p>
+          <p class="info__text">Идейные соображения высшего порядка, а также рамки и место обучения кадров позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Таким образом сложившаяся структура организации требуют определения и уточнения направлений прогрессивного развития. Равным образом консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
+          <p class="info__text">Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение соответствующий условий активизации. С другой стороны сложившаяся структура организации позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.</p>
+          <p class="info__text">Повседневная практика показывает, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. Таким образом консультация с широким активом представляет собой интересный эксперимент проверки модели развития.</p>
+          <p class="info__text">Идейные соображения высшего порядка, а также рамки и место обучения кадров позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Таким образом сложившаяся структура организации требуют определения и уточнения направлений прогрессивного развития. Равным образом консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
+          <p class="info__text">Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение соответствующий условий активизации. С другой стороны сложившаяся </p>
+        </div>
       </section>
     </div>
+    <footer class="footer">
+      <!--Футер-->
+      <div class="footer__info">
+        <!--Лого--><a href="index.html" title="Главная страница" class="logo">cooltech<img src="img/logo-footer.png" alt="Logo" class="logo__img"></a>
+        <!--Социалки-->
+        <div class="socials socials_footer">
+          <ul class="socials__list">
+            <li class="socials__item"><a href="#" title="Сылка на Facebook" class="socials__link socials__link_fb-footer socials__link_fb">Сылка на Facebook</a></li>
+            <li class="socials__item"><a href="#" title="Сылка на Вконтакте" class="socials__link socials__link_vk-footer socials__link_vk">Сылка на Вконтакте</a></li>
+            <li class="socials__item"><a href="#" title="Сылка на Twitter" class="socials__link socials__link_tw-footer socials__link_tw">Сылка на Twitter</a></li>
+          </ul>
+        </div>
+        <!--Навигация в футере-->
+        <nav class="navigate navigate_footer">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#" title="Планшеты" class="nav__link nav__link_footer">Планшеты</a></li>
+            <li class="nav__item"><a href="#" title="Мобильные телефоны" class="nav__link nav__link_footer">Мобильные телефоны</a></li>
+            <li class="nav__item"><a href="#" title="Мр3 плееры" class="nav__link nav__link_footer">Мр3 плееры</a></li>
+            <li class="nav__item"><a href="#" title="Персональные компьютеры" class="nav__link nav__link_footer">Персональные компьютеры</a></li>
+            <li class="nav__item"><a href="#" title="Ноутбуки" class="nav__link nav__link_footer">Ноутбуки</a></li>
+            <li class="nav__item"><a href="#" title="Аксессуары" class="nav__link nav__link_footer">Аксессуары</a></li>
+            <li class="nav__item"><a href="#" title="Бытовая техника" class="nav__link nav__link_footer">Бытовая техника</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!--Копирайт-->
+      <div class="footer__copyright">
+        <p class="footer__copyright-text">All rights reserved. 2015. no copy alowed</p>
+      </div>
+    </footer>
   </body>
 </html>

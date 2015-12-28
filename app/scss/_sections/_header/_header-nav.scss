@@ -1,0 +1,18 @@
+.navigate__list{
+  @include clearfix;
+}
+.navigate__item{
+  float: left;
+}
+.navigate__link{
+  display: block;
+  line-height: 20px;
+  vertical-align: middle;
+  padding: 16px;
+}
+.navigate__link:hover{
+  background: $hover-gray;
+}
+.navigate__link_active, .navigate__link_active:hover{
+  @include orange-block;
+}

@@ -9,7 +9,7 @@ var paths = {
     'scss': 'app/scss/*.scss',
     'html': 'app/*.html',
     'jade': 'app/markups/_pages/*.jade',
-    'sprite': 'app/img/sprites/*.png',
+    'sprite': 'app/img/sprites/**/*.png',
     'js': 'app/js/*.js'
 };
 
@@ -19,20 +19,23 @@ gulp.task('sprite', function () {
         .pipe(pl.plumber())
         .pipe(pl.spritesmith({
             imgName: '../img/sprite.png',
-            cssName: '_sprite.css',
-            cssFormat: 'scss',
+            cssName: '_sprite.scss',
+            cssFormat: 'css',
             algorithm: 'top-down',
             cssOpts: {
                 cssSelector: function (item) {
-                    var index = item.name.indexOf('_');
+                    var result = '.' + item.name,
+                        index;
 
-                    if (index !== -1) {
-                        var pseudo = item.name.slice(index + 1);
+                    while(true) {
+                        index = result.indexOf('$');
 
-                        return '.' + item.name.slice(0, index) + ':' + pseudo;
-                    } else {
-                        return '.' + item.name;
+                        if (index !== -1) {
+                            result = result.replace(result.charAt(index), ':');
+                        } else break;
                     }
+
+                    return result;
                 }
             },
             padding: 70
@@ -52,8 +55,6 @@ gulp.task('compass', function() {
             css: 'app/css',
             sass: 'app/scss'
         }));
-        //.pipe(pl.csso())
-        //.pipe(gulp.dest('app/css'));
 });
 
 //Concat
@@ -85,14 +86,6 @@ gulp.task('jade', function(){
         .pipe(gulp.dest('app/'));
 });
 
-//SASS
-gulp.task('sass', function(){
-    gulp.src(paths.scss)
-        .pipe(pl.plumber())
-        .pipe(pl.sass().on('error', pl.sass.logError))
-        .pipe(gulp.dest('app/css'));
-});
-
 //Server
 gulp.task('server', function(){
     browserSync({
@@ -105,7 +98,8 @@ gulp.task('server', function(){
 
 //Watch
 gulp.task('watch', function(){
-    gulp.watch('app/markups/_common/*.jade', ['jade']);
+    gulp.watch('app/markups/**/*.jade', ['jade']);
+    gulp.watch('app/scss/**/*.scss', ['compass']);
     gulp.watch([
         paths.html,
         paths.js,
@@ -114,4 +108,4 @@ gulp.task('watch', function(){
 });
 
 //Default
-gulp.task('default', ['server', 'watch']);
+gulp.task('default', ['server', 'jade', 'watch']);

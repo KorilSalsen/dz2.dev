@@ -1,0 +1,185 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<!-- `display: block` sprite -->
+<div class="icon-home"></div>
+
+<!-- `display: inline-block` sprite -->
+<img class="icon-home" />
+```
+*/
+.bottom-arrow {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -79px;
+  width: 13px;
+  height: 9px;
+}
+.checkbox:checked {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1095px;
+  width: 19px;
+  height: 19px;
+}
+.checkbox:hover {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1184px;
+  width: 19px;
+  height: 19px;
+}
+.checkbox {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -917px;
+  width: 19px;
+  height: 19px;
+}
+.contacts__link_map:after {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -659px;
+  width: 12px;
+  height: 16px;
+}
+.contacts__link_telephone:after {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -831px;
+  width: 12px;
+  height: 16px;
+}
+.socials__link_fb-footer:hover {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -2028px;
+  width: 43px;
+  height: 43px;
+}
+.socials__link_fb-footer {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -2141px;
+  width: 43px;
+  height: 43px;
+}
+.socials__link_tw-footer:hover {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -2254px;
+  width: 43px;
+  height: 43px;
+}
+.socials__link_tw-footer {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -2367px;
+  width: 43px;
+  height: 43px;
+}
+.socials__link_vk-footer:hover {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -2480px;
+  width: 43px;
+  height: 43px;
+}
+.socials__link_vk-footer {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -2593px;
+  width: 43px;
+  height: 43px;
+}
+.goods-list {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -745px;
+  width: 16px;
+  height: 16px;
+}
+.goods-pic-list {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -487px;
+  width: 16px;
+  height: 16px;
+}
+.goods-pic {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -573px;
+  width: 16px;
+  height: 16px;
+}
+.left-arrow {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 6px;
+  height: 9px;
+}
+.radio:checked {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1006px;
+  width: 19px;
+  height: 19px;
+}
+.radio {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1273px;
+  width: 19px;
+  height: 19px;
+}
+.right-arrow {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -158px;
+  width: 6px;
+  height: 9px;
+}
+.slider {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -318px;
+  width: 8px;
+  height: 14px;
+}
+.socials__link_fb:hover {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1740px;
+  width: 26px;
+  height: 26px;
+}
+.socials__link_fb {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1836px;
+  width: 26px;
+  height: 26px;
+}
+.socials__link_tw:hover {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1932px;
+  width: 26px;
+  height: 26px;
+}
+.socials__link_tw {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1452px;
+  width: 26px;
+  height: 26px;
+}
+.socials__link_vk:hover {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1548px;
+  width: 27px;
+  height: 26px;
+}
+.socials__link_vk {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1644px;
+  width: 27px;
+  height: 26px;
+}
+.star-off {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1362px;
+  width: 21px;
+  height: 20px;
+}
+.star-on {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -402px;
+  width: 16px;
+  height: 15px;
+}
+.top-arrow {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -237px;
+  width: 18px;
+  height: 11px;
+}

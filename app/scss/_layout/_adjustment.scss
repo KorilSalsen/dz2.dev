@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #f4f4f4;
+  color: $font-color;
+  font-family: $font-family;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: $font-color;
+  text-decoration: none;
+}
+
+.socials {
+  position: absolute;
+  top: 50%;
+  margin-top: -13px;
+}
+
+.socials__list {
+  @include clearfix();
+}
+
+.socials__item {
+  float: left;
+}
+
+.socials__link {
+  display: block;
+  font-size: 0;
+  margin-right: 15px;
+}
+$logo-height: 36px;
+.logo{
+  position: absolute;
+  display: block;
+  font-size: 0;
+  height: $logo-height;
+  left: 0;
+  top: 50%;
+  margin-top: -$logo-height/2;
+}
+.logo__img{
+  display: block;
+}
+$links-height: 20px;
+.links{
+  position: absolute;
+  height: $links-height;
+  line-height: 100%;
+  right: 0;
+  top: 50%;
+  margin-top: -$links-height/2;
+}
+.links__list{
+  @include clearfix();
+}
+.links__item{
+  float: left;
+  margin-left: 33px;
+}
+.links__link{
+  text-decoration: underline;
+  font-family: $font-semibold;
+}
+.links__link:hover{
+  color: $orange-color;
+}

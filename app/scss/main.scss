@@ -1,2 +1,14 @@
-@import "_sections/header";
-@import "_sections/sprite";
+/* --------- common --------- */
+
+@import "_common/_variables";
+@import "_common/_mixins";
+@import "_common/_fonts";
+@import "_common/_sprite";
+
+/* --------- adjustment --------- */
+
+@import "_layout/adjustment";
+
+/* --------- sections --------- */
+
+@import "_sections/**/*";

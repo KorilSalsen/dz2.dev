@@ -1,0 +1,20 @@
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin before{
+  display: block;
+  content: '';
+}
+
+@mixin orange-block {
+  background: $orange-color;
+  color: white;
+}

@@ -1,16 +1,17 @@
 //Верхняя часть хедера
 .header-top
-    //Социалки
-    .socials
-        - var socials = {'fb':'Facebook', 'vk':'Вконтакте', 'tw':'Twitter'}
-        ul.socials__list
-            each social, key in socials
-                li.socials__item
-                    a(href="#" class="socials__link socials__link_#{key}" title="Сылка на #{social}") Сылка на #{social}
-    //Контакты
-    .contacts
-        - var contacts = {'map': 'ул. Маяковская 6, офис 17', 'telephone': '+7 (921) 123-12-13'}
-        ul.contacts__list
-            each contact, key in contacts
-                li.contacts__item
-                    a(href="#" class="contacts__link contacts__link_#{key}" title="#{contact}") #{contact}
+    .header-top__wrapper
+        //Социалки
+        .socials
+            - var socials = {'fb':'Facebook', 'vk':'Вконтакте', 'tw':'Twitter'}
+            ul.socials__list
+                each social, key in socials
+                    li.socials__item
+                        a(href="#" class="socials__link socials__link_#{key}" title="Сылка на #{social}") Сылка на #{social}
+        //Контакты
+        .contacts
+            - var contacts = {'map': 'ул. Маяковская 6, офис 17', 'telephone': '+7 (921) 123-12-13'}
+            ul.contacts__list
+                each contact, key in contacts
+                    li.contacts__item
+                        a(href="#" class="contacts__link contacts__link_#{key}" title="#{contact}") #{contact}
