@@ -53,7 +53,8 @@ gulp.task('compass', function() {
         .pipe(pl.compass({
             config_file: 'config.rb',
             css: 'app/css',
-            sass: 'app/scss'
+            sass: 'app/scss',
+            sourcemap: true
         }));
 });
 
@@ -108,4 +109,4 @@ gulp.task('watch', function(){
 });
 
 //Default
-gulp.task('default', ['server', 'jade', 'watch']);
+gulp.task('default', ['server', 'jade', 'compass', 'watch']);

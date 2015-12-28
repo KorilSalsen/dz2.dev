@@ -82,138 +82,145 @@ Icon classes can be used entirely standalone. They are named after their origina
 */
 .bottom-arrow {
   background-image: url(../img/sprite.png);
-  background-position: 0px -79px;
+  background-position: 0px 0px;
   width: 13px;
   height: 9px;
 }
 
-.checkbox:checked {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -1095px;
-  width: 19px;
-  height: 19px;
-}
-
-.checkbox:hover {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -1184px;
-  width: 19px;
-  height: 19px;
-}
-
-.checkbox {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -917px;
-  width: 19px;
-  height: 19px;
-}
-
-.contacts__link_map:after {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -659px;
-  width: 12px;
-  height: 16px;
-}
-
-.contacts__link_telephone:after {
+.contacts__link_map:before {
   background-image: url(../img/sprite.png);
   background-position: 0px -831px;
   width: 12px;
   height: 16px;
 }
 
+.contacts__link_telephone:before {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -659px;
+  width: 12px;
+  height: 16px;
+}
+
 .socials__link_fb-footer:hover {
   background-image: url(../img/sprite.png);
-  background-position: 0px -2028px;
+  background-position: 0px -2117px;
   width: 43px;
   height: 43px;
 }
 
 .socials__link_fb-footer {
   background-image: url(../img/sprite.png);
-  background-position: 0px -2141px;
+  background-position: 0px -2230px;
   width: 43px;
   height: 43px;
 }
 
 .socials__link_tw-footer:hover {
   background-image: url(../img/sprite.png);
-  background-position: 0px -2254px;
+  background-position: 0px -2343px;
   width: 43px;
   height: 43px;
 }
 
 .socials__link_tw-footer {
   background-image: url(../img/sprite.png);
-  background-position: 0px -2367px;
+  background-position: 0px -2456px;
   width: 43px;
   height: 43px;
 }
 
 .socials__link_vk-footer:hover {
   background-image: url(../img/sprite.png);
-  background-position: 0px -2480px;
+  background-position: 0px -2569px;
   width: 43px;
   height: 43px;
 }
 
 .socials__link_vk-footer {
   background-image: url(../img/sprite.png);
-  background-position: 0px -2593px;
+  background-position: 0px -2682px;
   width: 43px;
   height: 43px;
 }
 
 .goods-list {
   background-image: url(../img/sprite.png);
-  background-position: 0px -745px;
+  background-position: 0px -573px;
   width: 16px;
   height: 16px;
 }
 
 .goods-pic-list {
   background-image: url(../img/sprite.png);
-  background-position: 0px -487px;
+  background-position: 0px -745px;
   width: 16px;
   height: 16px;
 }
 
 .goods-pic {
   background-image: url(../img/sprite.png);
-  background-position: 0px -573px;
+  background-position: 0px -487px;
   width: 16px;
   height: 16px;
 }
 
 .left-arrow {
   background-image: url(../img/sprite.png);
-  background-position: 0px 0px;
+  background-position: 0px -158px;
   width: 6px;
   height: 9px;
 }
 
-.radio:checked {
+.right-arrow {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1006px;
+  background-position: 0px -79px;
+  width: 6px;
+  height: 9px;
+}
+
+.sidebar-list__input:checked + .sidebar-list__label_box:before {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -917px;
   width: 19px;
   height: 19px;
 }
 
-.radio {
+.sidebar-list__input:checked + .sidebar-list__label_radio:before {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1095px;
+  width: 19px;
+  height: 19px;
+}
+
+.sidebar-list__label_box:before {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1184px;
+  width: 19px;
+  height: 19px;
+}
+
+.sidebar-list__label_box:hover:before {
   background-image: url(../img/sprite.png);
   background-position: 0px -1273px;
   width: 19px;
   height: 19px;
 }
 
-.right-arrow {
+.sidebar-list__label_radio:before {
   background-image: url(../img/sprite.png);
-  background-position: 0px -158px;
-  width: 6px;
-  height: 9px;
+  background-position: 0px -1362px;
+  width: 19px;
+  height: 19px;
 }
 
-.slider {
+.sidebar-list__label_radio:hover:before {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1006px;
+  width: 19px;
+  height: 19px;
+}
+
+.slider, .prise-slider:before, .prise-slider:after {
   background-image: url(../img/sprite.png);
   background-position: 0px -318px;
   width: 8px;
@@ -222,49 +229,49 @@ Icon classes can be used entirely standalone. They are named after their origina
 
 .socials__link_fb:hover {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1740px;
+  background-position: 0px -1829px;
   width: 26px;
   height: 26px;
 }
 
 .socials__link_fb {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1836px;
+  background-position: 0px -1925px;
   width: 26px;
   height: 26px;
 }
 
 .socials__link_tw:hover {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1932px;
+  background-position: 0px -2021px;
   width: 26px;
   height: 26px;
 }
 
 .socials__link_tw {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1452px;
+  background-position: 0px -1541px;
   width: 26px;
   height: 26px;
 }
 
 .socials__link_vk:hover {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1548px;
+  background-position: 0px -1637px;
   width: 27px;
   height: 26px;
 }
 
 .socials__link_vk {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1644px;
+  background-position: 0px -1733px;
   width: 27px;
   height: 26px;
 }
 
 .star-off {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1362px;
+  background-position: 0px -1451px;
   width: 21px;
   height: 20px;
 }
@@ -472,24 +479,8 @@ a {
   color: white;
 }
 
-.header-top {
-  border-bottom: 2px solid #ebedef;
-}
-
 .header-top__wrapper {
   height: 77px;
-}
-
-.contacts__link {
-  position: relative;
-}
-
-.contacts__link:after {
-  display: block;
-  content: '';
-  position: absolute;
-  top: 1px;
-  left: -20px;
 }
 
 .socials {
@@ -498,11 +489,11 @@ a {
 
 .contacts {
   position: absolute;
-  height: 18px;
+  height: 23px;
   line-height: 100%;
   right: 0;
   top: 50%;
-  margin-top: -9px;
+  margin-top: -11.5px;
 }
 
 .contacts__list:before, .contacts__list:after {
@@ -515,12 +506,26 @@ a {
 
 .contacts__item {
   float: left;
-  margin-left: 85px;
+  margin-left: 105px;
 }
 
 .contacts__link {
   font-size: 14px;
-  vertical-align: middle;
+  position: relative;
+}
+
+.contacts__link:before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+  left: -20px;
+}
+
+.contacts__link_telephone {
+  font-size: 18px;
+  font-family: "Open Sans Semibold", sans-serif;
 }
 
 .main-header {
@@ -529,6 +534,7 @@ a {
 
 .header-nav, .header-top {
   background: white;
+  border-bottom: 2px solid #ebedef;
 }
 
 .header-top__wrapper, .header-bottom__wrapper, .navigate {
@@ -543,3 +549,290 @@ a {
 .header-top__wrapper:after, .header-bottom__wrapper:after, .navigate:after {
   clear: both;
 }
+
+.breadcrumb {
+  box-sizing: border-box;
+  height: 121px;
+  padding-top: 28px;
+}
+
+.breadcrumb__list {
+  font-size: 14px;
+}
+.breadcrumb__list:before, .breadcrumb__list:after {
+  content: '';
+  display: table;
+}
+.breadcrumb__list:after {
+  clear: both;
+}
+
+.breadcrumb__item {
+  float: left;
+  margin-right: 15px;
+  position: relative;
+}
+
+.breadcrumb__item:after {
+  display: block;
+  content: '>';
+  position: absolute;
+  bottom: 0;
+  right: -10px;
+}
+
+.breadcrumb__item_active:after {
+  display: none;
+}
+
+.breadcrumb__link:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb__link_active {
+  color: #ff6600;
+  text-decoration: underline;
+}
+
+.catalog-title {
+  font-size: 20px;
+  font-family: "Open Sans Bold", sans-serif;
+  margin-top: 16px;
+}
+
+.content {
+  float: left;
+  box-sizing: border-box;
+  width: 743px;
+}
+
+.page {
+  width: 1100px;
+  margin: auto;
+  position: relative;
+  font-size: 14px;
+}
+.page:before, .page:after {
+  content: '';
+  display: table;
+}
+.page:after {
+  clear: both;
+}
+
+.sidebar {
+  box-sizing: border-box;
+  width: 333px;
+  margin-right: 24px;
+  float: left;
+}
+
+.phone-classes-list, .accordion-list {
+  border: 1px solid #dee1e4;
+  border-radius: 5px;
+  background: #fbfbfb;
+}
+
+.phone-classes-list {
+  margin-bottom: 38px;
+}
+
+.phone-classes-list__item, .accordion-list__item {
+  border-bottom: 1px solid #dee1e4;
+}
+
+.phone-classes-list__item:last-child, .accordion-list__item:last-child {
+  border-bottom: none;
+}
+
+.phone-classes-list__link {
+  color: #7f7f7f;
+  display: block;
+  height: 45px;
+  box-sizing: border-box;
+  line-height: 100%;
+  vertical-align: middle;
+  padding: 14px 30px;
+}
+
+.phone-classes-list__link_active {
+  background-color: #d9e5ea;
+}
+
+.accordion-list__item {
+  padding: 9px 30px;
+}
+
+.sidebar-list__item {
+  padding: 9px 0;
+}
+.sidebar-list__item:before, .sidebar-list__item:after {
+  content: '';
+  display: table;
+}
+.sidebar-list__item:after {
+  clear: both;
+}
+
+.sidebar-list-title {
+  font-size: 16px;
+  font-family: "Open Sans Semibold", sans-serif;
+  padding-bottom: 6px;
+}
+
+.sidebar-list__input {
+  display: none;
+}
+
+.sidebar-list__label {
+  padding-left: 29px;
+  display: block;
+  position: relative;
+}
+
+.sidebar-list__label:before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.clear-filter {
+  display: inline-block;
+  color: #5db2fc;
+  text-decoration: underline;
+  padding-bottom: 9px;
+}
+
+.sidebar-list:before, .sidebar-list:after {
+  content: '';
+  display: table;
+}
+.sidebar-list:after {
+  clear: both;
+}
+
+.sidebar-list__label_text {
+  display: block;
+  padding: 0;
+  float: left;
+  line-height: 30px;
+  vertical-align: middle;
+}
+
+.sidebar-list__label_to {
+  margin-left: 45px;
+}
+
+.sidebar-list__input-text {
+  float: left;
+  box-sizing: border-box;
+  padding: 7px 8px;
+  width: 83px;
+  height: 30px;
+  border: 1px solid #ebedef;
+  box-shadow: inset 0 1px 1px 0 rgba(148, 148, 148, 0.43);
+  border-radius: 3px;
+  margin-left: 14px;
+}
+
+.prise-slider {
+  height: 3px;
+  background-color: #dee1e4;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.prise-slider:before, .prise-slider:after {
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  cursor: pointer;
+}
+
+.prise-slider:before {
+  left: -4px;
+}
+
+.prise-slider:after {
+  right: -4px;
+}
+
+.prise-slider__inner {
+  background: #ff6600;
+  height: 3px;
+}
+
+.accordion-list__item_color {
+  padding-bottom: 5px;
+}
+
+.sidebar-list__item-color {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  float: left;
+  border: 1px solid #dee1e4;
+  margin: 10px 21px 12px 0;
+}
+
+.sidebar-list__item-color:hover {
+  box-shadow: 0 0 1px 1px #ff6600;
+}
+
+.sidebar-list__item-color_active, .sidebar-list__item-color_active:hover {
+  box-shadow: 0 0 1px 2px #ff6600;
+  color: blueviolet;
+}
+
+.sidebar-list__item-color_white {
+  background: #fff;
+}
+
+.sidebar-list__item-color_gray {
+  background: ##ccc;
+}
+
+.sidebar-list__item-color_black {
+  background: #000;
+}
+
+.sidebar-list__item-color_darkblue {
+  background: #0a3153;
+}
+
+.sidebar-list__item-color_red {
+  background: #ff1800;
+}
+
+.sidebar-list__item-color_yellow {
+  background: #fff343;
+}
+
+.sidebar-list__item-color_orange {
+  background: #fb914a;
+}
+
+.sidebar-list__item-color_green {
+  background: #92c37c;
+}
+
+.sidebar-list__item-color_blue {
+  background: #40a6ff;
+}
+
+.sidebar-list__item-color_violet {
+  background: #9870ad;
+}
+
+.sidebar-list__item-color_pink {
+  background: #dc78ad;
+}
+
+.sidebar-list__item-color_brown {
+  background: #7f401d;
+}
+
+/*# sourceMappingURL=main.css.map */

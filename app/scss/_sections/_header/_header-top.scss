@@ -1,22 +1,10 @@
-.header-top{
-  border-bottom: 2px solid #ebedef;
-}
 .header-top__wrapper{
   height: 77px;
-}
-.contacts__link{
-  position: relative;
-}
-.contacts__link:after{
-  @include before;
-  position: absolute;
-  top:1px;
-  left: -20px;
 }
 .socials{
   left:0;
 }
-$contacts-height: 18px;
+$contacts-height: 23px;
 .contacts{
   position: absolute;
   height: $contacts-height;
@@ -28,11 +16,23 @@ $contacts-height: 18px;
 .contacts__list{
   @include clearfix;
 }
+$icon-left: 20px;
 .contacts__item{
   float: left;
-  margin-left: 85px;
+  margin-left: 85px + $icon-left;
 }
 .contacts__link{
   font-size: 14px;
-  vertical-align: middle;
+  position: relative;
+}
+.contacts__link:before{
+  @include before;
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+  left: -$icon-left;
+}
+.contacts__link_telephone{
+  font-size: 18px;
+  font-family: $font-semibold;
 }

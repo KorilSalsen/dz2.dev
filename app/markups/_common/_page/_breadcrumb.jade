@@ -1,9 +1,10 @@
 //Хлебные крошки
-.breadcrumps
+.breadcrumb
     - var crumbText = ['Главная', 'Каталог']
     ul.breadcrumb__list
-        each text in crumbText
-            li.breadcrumb__item
-                a(href="#" class="breadcrumb__link" title="#{text}") #{text}
+        each text, index in crumbText
+            - var active = (index == crumbText.length - 1)
+            li(class="breadcrumb__item" + (active ? " breadcrumb__item_active" : ''))
+                a(href="#" class="breadcrumb__link" + (active ? " breadcrumb__link_active" : '') title="#{text}") #{text}
     //Заголовок каталога
     .catalog-title Мобильные телефоны

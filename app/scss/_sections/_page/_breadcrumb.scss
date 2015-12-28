@@ -1,0 +1,36 @@
+.breadcrumb{
+  box-sizing: border-box;
+  height: 121px;
+  padding-top: 28px;
+}
+.breadcrumb__list{
+  @include clearfix;
+  font-size: 14px;
+}
+.breadcrumb__item{
+  float: left;
+  margin-right: 15px;
+  position: relative;
+}
+.breadcrumb__item:after{
+  display: block;
+  content: '>';
+  position: absolute;
+  bottom: 0;
+  right: -10px;
+}
+.breadcrumb__item_active:after{
+  display: none;
+}
+.breadcrumb__link:hover{
+  text-decoration: underline;
+}
+.breadcrumb__link_active{
+  color: $orange-color;
+  text-decoration: underline;
+}
+.catalog-title{
+  font-size: 20px;
+  font-family: $font-bold;
+  margin-top: 16px;
+}

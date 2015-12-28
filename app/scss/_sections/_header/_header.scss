@@ -3,10 +3,9 @@
 }
 .header-nav, .header-top{
   background: white;
+  border-bottom: 2px solid #ebedef;
 }
 .header-top__wrapper, .header-bottom__wrapper, .navigate{
-  width: 1100px;
-  margin: auto;
-  position: relative;
+  @include main-central;
   @include clearfix;
 }

@@ -1,0 +1,5 @@
+.page{
+  @include main-central;
+  @include clearfix;
+  font-size: 14px;
+}

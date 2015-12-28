@@ -11,117 +11,123 @@ Icon classes can be used entirely standalone. They are named after their origina
 */
 .bottom-arrow {
   background-image: url(../img/sprite.png);
-  background-position: 0px -79px;
+  background-position: 0px 0px;
   width: 13px;
   height: 9px;
 }
-.checkbox:checked {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -1095px;
-  width: 19px;
-  height: 19px;
-}
-.checkbox:hover {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -1184px;
-  width: 19px;
-  height: 19px;
-}
-.checkbox {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -917px;
-  width: 19px;
-  height: 19px;
-}
-.contacts__link_map:after {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -659px;
-  width: 12px;
-  height: 16px;
-}
-.contacts__link_telephone:after {
+.contacts__link_map:before {
   background-image: url(../img/sprite.png);
   background-position: 0px -831px;
   width: 12px;
   height: 16px;
 }
+.contacts__link_telephone:before {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -659px;
+  width: 12px;
+  height: 16px;
+}
 .socials__link_fb-footer:hover {
   background-image: url(../img/sprite.png);
-  background-position: 0px -2028px;
+  background-position: 0px -2117px;
   width: 43px;
   height: 43px;
 }
 .socials__link_fb-footer {
   background-image: url(../img/sprite.png);
-  background-position: 0px -2141px;
+  background-position: 0px -2230px;
   width: 43px;
   height: 43px;
 }
 .socials__link_tw-footer:hover {
   background-image: url(../img/sprite.png);
-  background-position: 0px -2254px;
+  background-position: 0px -2343px;
   width: 43px;
   height: 43px;
 }
 .socials__link_tw-footer {
   background-image: url(../img/sprite.png);
-  background-position: 0px -2367px;
+  background-position: 0px -2456px;
   width: 43px;
   height: 43px;
 }
 .socials__link_vk-footer:hover {
   background-image: url(../img/sprite.png);
-  background-position: 0px -2480px;
+  background-position: 0px -2569px;
   width: 43px;
   height: 43px;
 }
 .socials__link_vk-footer {
   background-image: url(../img/sprite.png);
-  background-position: 0px -2593px;
+  background-position: 0px -2682px;
   width: 43px;
   height: 43px;
 }
 .goods-list {
   background-image: url(../img/sprite.png);
-  background-position: 0px -745px;
+  background-position: 0px -573px;
   width: 16px;
   height: 16px;
 }
 .goods-pic-list {
   background-image: url(../img/sprite.png);
-  background-position: 0px -487px;
+  background-position: 0px -745px;
   width: 16px;
   height: 16px;
 }
 .goods-pic {
   background-image: url(../img/sprite.png);
-  background-position: 0px -573px;
+  background-position: 0px -487px;
   width: 16px;
   height: 16px;
 }
 .left-arrow {
   background-image: url(../img/sprite.png);
-  background-position: 0px 0px;
+  background-position: 0px -158px;
   width: 6px;
   height: 9px;
 }
-.radio:checked {
+.right-arrow {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1006px;
+  background-position: 0px -79px;
+  width: 6px;
+  height: 9px;
+}
+.sidebar-list__input:checked + .sidebar-list__label_box:before {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -917px;
   width: 19px;
   height: 19px;
 }
-.radio {
+.sidebar-list__input:checked + .sidebar-list__label_radio:before {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1095px;
+  width: 19px;
+  height: 19px;
+}
+.sidebar-list__label_box:before {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1184px;
+  width: 19px;
+  height: 19px;
+}
+.sidebar-list__label_box:hover:before {
   background-image: url(../img/sprite.png);
   background-position: 0px -1273px;
   width: 19px;
   height: 19px;
 }
-.right-arrow {
+.sidebar-list__label_radio:before {
   background-image: url(../img/sprite.png);
-  background-position: 0px -158px;
-  width: 6px;
-  height: 9px;
+  background-position: 0px -1362px;
+  width: 19px;
+  height: 19px;
+}
+.sidebar-list__label_radio:hover:before {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1006px;
+  width: 19px;
+  height: 19px;
 }
 .slider {
   background-image: url(../img/sprite.png);
@@ -131,43 +137,43 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .socials__link_fb:hover {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1740px;
+  background-position: 0px -1829px;
   width: 26px;
   height: 26px;
 }
 .socials__link_fb {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1836px;
+  background-position: 0px -1925px;
   width: 26px;
   height: 26px;
 }
 .socials__link_tw:hover {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1932px;
+  background-position: 0px -2021px;
   width: 26px;
   height: 26px;
 }
 .socials__link_tw {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1452px;
+  background-position: 0px -1541px;
   width: 26px;
   height: 26px;
 }
 .socials__link_vk:hover {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1548px;
+  background-position: 0px -1637px;
   width: 27px;
   height: 26px;
 }
 .socials__link_vk {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1644px;
+  background-position: 0px -1733px;
   width: 27px;
   height: 26px;
 }
 .star-off {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1362px;
+  background-position: 0px -1451px;
   width: 21px;
   height: 20px;
 }

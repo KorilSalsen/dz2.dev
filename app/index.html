@@ -68,10 +68,10 @@
       </header>
       <section class="page">
         <!--Хлебные крошки-->
-        <div class="breadcrumps">
+        <div class="breadcrumb">
           <ul class="breadcrumb__list">
             <li class="breadcrumb__item"><a href="#" title="Главная" class="breadcrumb__link">Главная</a></li>
-            <li class="breadcrumb__item"><a href="#" title="Каталог" class="breadcrumb__link">Каталог</a></li>
+            <li class="breadcrumb__item breadcrumb__item_active"><a href="#" title="Каталог" class="breadcrumb__link breadcrumb__link_active">Каталог</a></li>
           </ul>
           <!--Заголовок каталога-->
           <div class="catalog-title">Мобильные телефоны</div>
@@ -80,8 +80,8 @@
         <aside class="sidebar">
           <!--Класс телефона-->
           <ul class="phone-classes-list">
-            <li class="phone-classes-list">Флагманы</li>
-            <li class="phone-classes-list">Бюджетная линейка</li>
+            <li class="phone-classes-list__item"><a href="#" class="phone-classes-list__link">Флагманы</a></li>
+            <li class="phone-classes-list__item"><a href="#" class="phone-classes-list__link phone-classes-list__link_active">Бюджетная линейка</a></li>
           </ul>
           <!--Аккордеон-->
           <ul class="accordion-list">
@@ -90,12 +90,12 @@
               <div class="sidebar-list-title">Наличие в магазинах</div>
               <ul class="sidebar-list">
                 <li class="sidebar-list__item">
-                  <input type="radio" name="shop" id="input-all-shops" class="sidebar-list__input sidebar-list__input_radio">
-                  <label for="input-all-shops" class="sidebar-list__label">Во всех магазинах</label>
+                  <input type="radio" name="shop" id="input-all-shops" class="sidebar-list__input">
+                  <label for="input-all-shops" class="sidebar-list__label sidebar-list__label_radio">Во всех магазинах</label>
                 </li>
                 <li class="sidebar-list__item">
-                  <input type="radio" name="shop" id="input-local-shops" class="sidebar-list__input sidebar-list__input_radio">
-                  <label for="input-local-shops" class="sidebar-list__label">В ближайшем ко мне магазине</label>
+                  <input type="radio" name="shop" id="input-local-shops" class="sidebar-list__input">
+                  <label for="input-local-shops" class="sidebar-list__label sidebar-list__label_radio">В ближайшем ко мне магазине</label>
                 </li>
               </ul>
             </li>
@@ -104,110 +104,87 @@
               <div class="sidebar-list-title">Бренды</div>
               <ul class="sidebar-list">
                 <li class="sidebar-list__item">
-                  <input type="checkbox" name="lenovo" id="input-lenovo" class="sidebar-list__input sidebar-list__input_box">
-                  <label for="input-lenovo" class="sidebar-list__label sidebar-list__label_upper">lenovo</label>
+                  <input type="checkbox" name="lenovo" id="input-lenovo" class="sidebar-list__input">
+                  <label for="input-lenovo" class="sidebar-list__label sidebar-list__label_upper sidebar-list__label_box">Lenovo</label>
                 </li>
                 <li class="sidebar-list__item">
-                  <input type="checkbox" name="apple" id="input-apple" class="sidebar-list__input sidebar-list__input_box">
-                  <label for="input-apple" class="sidebar-list__label sidebar-list__label_upper">apple</label>
+                  <input type="checkbox" name="apple" id="input-apple" class="sidebar-list__input">
+                  <label for="input-apple" class="sidebar-list__label sidebar-list__label_upper sidebar-list__label_box">Apple</label>
                 </li>
                 <li class="sidebar-list__item">
-                  <input type="checkbox" name="samsung" id="input-samsung" class="sidebar-list__input sidebar-list__input_box">
-                  <label for="input-samsung" class="sidebar-list__label sidebar-list__label_upper">samsung</label>
+                  <input type="checkbox" name="samsung" id="input-samsung" class="sidebar-list__input">
+                  <label for="input-samsung" class="sidebar-list__label sidebar-list__label_upper sidebar-list__label_box">Samsung</label>
                 </li>
                 <li class="sidebar-list__item">
-                  <input type="checkbox" name="asus" id="input-asus" class="sidebar-list__input sidebar-list__input_box">
-                  <label for="input-asus" class="sidebar-list__label sidebar-list__label_upper">asus</label>
+                  <input type="checkbox" name="asus" id="input-asus" class="sidebar-list__input">
+                  <label for="input-asus" class="sidebar-list__label sidebar-list__label_upper sidebar-list__label_box">Asus</label>
                 </li>
                 <li class="sidebar-list__item">
-                  <input type="checkbox" name="motorola" id="input-motorola" class="sidebar-list__input sidebar-list__input_box">
-                  <label for="input-motorola" class="sidebar-list__label sidebar-list__label_upper">motorola</label>
+                  <input type="checkbox" name="motorola" id="input-motorola" class="sidebar-list__input">
+                  <label for="input-motorola" class="sidebar-list__label sidebar-list__label_upper sidebar-list__label_box">Motorola</label>
                 </li>
-              </ul><a href="#" class="clear-filter">Сбросить фильтры</a>
+              </ul><a href="#" class="clear-filter">Сбросить фильтр</a>
             </li>
             <!--Цена-->
             <li class="accordion-list__item">
               <div class="sidebar-list-title">Цена</div>
               <ul class="sidebar-list">
                 <li class="sidebar-list__item">
-                  <input type="text" name="from" id="input-from" class="sidebar-list__input sidebar-list__input_text">
-                  <label for="input-from" class="sidebar-list__label sidebar-list__label_upper">от</label>
-                  <div class="prise-slider"></div>
+                  <label for="input-from" class="sidebar-list__label sidebar-list__label_text sidebar-list__label_from">от</label>
+                  <input type="text" name="from" id="input-from" class="sidebar-list__input-text">
+                  <label for="input-to" class="sidebar-list__label sidebar-list__label_text sidebar-list__label_to">до</label>
+                  <input type="text" name="to" id="input-to" class="sidebar-list__input-text">
                 </li>
                 <li class="sidebar-list__item">
-                  <input type="text" name="to" id="input-to" class="sidebar-list__input sidebar-list__input_text">
-                  <label for="input-to" class="sidebar-list__label sidebar-list__label_upper">до</label>
-                  <div class="prise-slider"></div>
+                  <div class="prise-slider">
+                    <div class="prise-slider__inner"></div>
+                  </div>
                 </li>
               </ul>
             </li>
             <!--Цвет-->
-            <li class="accordion-list__item">
+            <li class="accordion-list__item accordion-list__item_color">
               <div class="sidebar-list-title">Цвет</div>
               <ul class="sidebar-list">
-                <li class="sidebar-list__item">
-                  <div class="color color_white"></div>
-                </li>
-                <li class="sidebar-list__item">
-                  <div class="color color_gray"></div>
-                </li>
-                <li class="sidebar-list__item">
-                  <div class="color color_black"></div>
-                </li>
-                <li class="sidebar-list__item">
-                  <div class="color color_dark-blue"></div>
-                </li>
-                <li class="sidebar-list__item">
-                  <div class="color color_red"></div>
-                </li>
-                <li class="sidebar-list__item">
-                  <div class="color color_yellow"></div>
-                </li>
-                <li class="sidebar-list__item">
-                  <div class="color color_orange"></div>
-                </li>
-                <li class="sidebar-list__item">
-                  <div class="color color_green"></div>
-                </li>
-                <li class="sidebar-list__item">
-                  <div class="color color_blue"></div>
-                </li>
-                <li class="sidebar-list__item">
-                  <div class="color color_violet"></div>
-                </li>
-                <li class="sidebar-list__item">
-                  <div class="color color_pink"></div>
-                </li>
-                <li class="sidebar-list__item">
-                  <div class="color color_brown"></div>
-                </li>
+                <li class="sidebar-list__item sidebar-list__item-color sidebar-list__item-color_white"></li>
+                <li class="sidebar-list__item sidebar-list__item-color sidebar-list__item-color_gray sidebar-list__item-color_active"></li>
+                <li class="sidebar-list__item sidebar-list__item-color sidebar-list__item-color_black"></li>
+                <li class="sidebar-list__item sidebar-list__item-color sidebar-list__item-color_darkblue"></li>
+                <li class="sidebar-list__item sidebar-list__item-color sidebar-list__item-color_red"></li>
+                <li class="sidebar-list__item sidebar-list__item-color sidebar-list__item-color_yellow"></li>
+                <li class="sidebar-list__item sidebar-list__item-color sidebar-list__item-color_orange"></li>
+                <li class="sidebar-list__item sidebar-list__item-color sidebar-list__item-color_green"></li>
+                <li class="sidebar-list__item sidebar-list__item-color sidebar-list__item-color_blue"></li>
+                <li class="sidebar-list__item sidebar-list__item-color sidebar-list__item-color_violet"></li>
+                <li class="sidebar-list__item sidebar-list__item-color sidebar-list__item-color_pink"></li>
+                <li class="sidebar-list__item sidebar-list__item-color sidebar-list__item-color_brown"></li>
               </ul>
             </li>
             <!--Операционные система-->
             <li class="accordion-list__item">
-              <div class="sidebar-list-title">Операционные система</div>
+              <div class="sidebar-list-title">Операционные системы</div>
               <ul class="sidebar-list">
                 <li class="sidebar-list__item">
-                  <input type="checkbox" name="android" id="input-android" class="sidebar-list__input sidebar-list__input_box">
-                  <label for="input-android" class="sidebar-list__label sidebar-list__label_upper">Android</label>
+                  <input type="checkbox" name="android" id="input-android" class="sidebar-list__input">
+                  <label for="input-android" class="sidebar-list__label sidebar-list__label_box">Android</label>
                 </li>
                 <li class="sidebar-list__item">
-                  <input type="checkbox" name="ios" id="input-ios" class="sidebar-list__input sidebar-list__input_box">
-                  <label for="input-ios" class="sidebar-list__label sidebar-list__label_upper">iOS</label>
+                  <input type="checkbox" name="ios" id="input-ios" class="sidebar-list__input">
+                  <label for="input-ios" class="sidebar-list__label sidebar-list__label_box">iOS</label>
                 </li>
                 <li class="sidebar-list__item">
-                  <input type="checkbox" name="windows" id="input-windows" class="sidebar-list__input sidebar-list__input_box">
-                  <label for="input-windows" class="sidebar-list__label sidebar-list__label_upper">Windows Phone</label>
+                  <input type="checkbox" name="windows" id="input-windows" class="sidebar-list__input">
+                  <label for="input-windows" class="sidebar-list__label sidebar-list__label_box">Windows Phone</label>
                 </li>
                 <li class="sidebar-list__item">
-                  <input type="checkbox" name="symbian" id="input-symbian" class="sidebar-list__input sidebar-list__input_box">
-                  <label for="input-symbian" class="sidebar-list__label sidebar-list__label_upper">Symbian</label>
+                  <input type="checkbox" name="symbian" id="input-symbian" class="sidebar-list__input">
+                  <label for="input-symbian" class="sidebar-list__label sidebar-list__label_box">Symbian</label>
                 </li>
                 <li class="sidebar-list__item">
-                  <input type="checkbox" name="custom" id="input-custom" class="sidebar-list__input sidebar-list__input_box">
-                  <label for="input-custom" class="sidebar-list__label sidebar-list__label_upper">Custom</label>
+                  <input type="checkbox" name="custom" id="input-custom" class="sidebar-list__input">
+                  <label for="input-custom" class="sidebar-list__label sidebar-list__label_box">Custom</label>
                 </li>
-              </ul><a href="#" class="clear-filter">Сбросить фильтры</a>
+              </ul><a href="#" class="clear-filter">Сбросить фильтр</a>
             </li>
           </ul>
         </aside>
