@@ -47,3 +47,11 @@ article.content
                             .product-buy__indicator(class="product-buy__indicator_#{product.stock}")
                             span.product-buy__text #{product.stockText}
                         button.product-buy__button В корзину
+    //Страницы
+    nav.pages-nav
+        - var pages = [1, 2, 3]
+        ul.pages-nav__list
+            li.pages-nav__item <
+            each page in pages
+                li.pages-nav__item #{page}
+            li.pages-nav__item >

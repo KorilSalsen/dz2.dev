@@ -1,7 +1,7 @@
 //Навигация в хедере
 nav.navigate
     - var navText = ['Планшеты', 'Мобильные телефоны', 'Мр3 плееры', 'Персональные компьютеры', 'Ноутбуки', 'Аксессуары', 'Бытовая техника']
-    ul.nav-list
+    ul.nav_list
         each text in navText
-            li.nav-list__item
-                a(href="#" class="nav-list__link" title="#{text}") #{text}
+            li.nav__item
+                a(href="#" class="nav__link" title="#{text}") #{text}

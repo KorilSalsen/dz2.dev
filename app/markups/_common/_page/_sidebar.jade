@@ -1,5 +1,10 @@
 //Сайдбар
 aside.sidebar
+    //Класс телефона
+    - var classes = ['Флагманы', 'Бюджетная линейка']
+    ul.phone-classes-list
+        each phoneClass in classes
+            li.phone-classes-list #{phoneClass}
     //Аккордеон
     ul.accordion-list
         //Наличие

@@ -1,0 +1,16 @@
+//Нижняя часть хедера
+.header-bottom
+    //Лого
+    a(href="index.html" title="Главная страница" class="logo") cooltech
+        img(src="img/logo.png" alt="Logo" class="logo__img")
+    //Поиск
+    form.search
+        input(type="text" name="search-text" class="search__text" placeholder="Что будем искать?")
+        button(class="search__submit") Найти
+    //Ссылки
+    .links
+        - var linksText = ['Карта проезда', 'История заказов', 'Корзина']
+        ul.links__list
+            each text in linksText
+                li.links__item
+                    a(href="#" class="links__link" title="#{text}") #{text}
