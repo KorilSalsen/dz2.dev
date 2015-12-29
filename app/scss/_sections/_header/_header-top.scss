@@ -1,11 +1,32 @@
-.header-top__wrapper{
+.header-top__wrapper {
   height: 77px;
 }
-.socials{
-  left:0;
+
+.socials_header {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -13px;
 }
+
+.socials__list {
+  @include clearfix();
+}
+
+.socials__item {
+  float: left;
+}
+.socials__item_header{
+  margin-right: 15px;
+}
+
+.socials__link {
+  display: block;
+  font-size: 0;
+}
+
 $contacts-height: 23px;
-.contacts{
+.contacts {
   position: absolute;
   height: $contacts-height;
   line-height: 100%;
@@ -13,26 +34,31 @@ $contacts-height: 23px;
   top: 50%;
   margin-top: -$contacts-height/2;
 }
-.contacts__list{
+
+.contacts__list {
   @include clearfix;
 }
+
 $icon-left: 20px;
-.contacts__item{
+.contacts__item {
   float: left;
   margin-left: 85px + $icon-left;
 }
-.contacts__link{
+
+.contacts__link {
   font-size: 14px;
   position: relative;
 }
-.contacts__link:before{
+
+.contacts__link:before {
   @include before;
   position: absolute;
   top: 50%;
   margin-top: -8px;
   left: -$icon-left;
 }
-.contacts__link_telephone{
+
+.contacts__link_telephone {
   font-size: 18px;
   font-family: $font-semibold;
 }

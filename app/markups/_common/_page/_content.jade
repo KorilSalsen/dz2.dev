@@ -8,50 +8,59 @@ article.content
             each option in options
                 option.sort__option #{option}
         .sort__view
-            .sort__view-title Вид каталога
+            span.sort__view-title Вид каталога
             - var views = {'table': 'Таблица', 'pic': 'Значки', 'list': 'Список'}
+            - var viewsIndex = 0
             ul.sort__list
                 each view, key in views
                     li.sort__item
-                        a(href="#" class="sort__link sort__link_#{key}" title="#{view}") #{view}
+                        a(href="#" class="sort__link sort__link_#{key}" + ((viewsIndex++ == 0) ? " sort__link sort__link_#{key}_active" : '') title="#{view}") #{view}
     //Товары
-    .goods
+    .goods(class="goods_table")
         include ./_phones
         ul.goods__list
             each product in products
                 li.goods__item
                     .product-slider
-                        img.product-slider__main-image(src="img/products/#{product.img}.jpg" alt="#{product.name}")
-                        - var positions = ['left', 'center', 'right']
+                        .product-slider__main-wrapper
+                            img.product-slider__main-image(src="img/products/#{product.img}-left.jpg" alt="#{product.name}")
+                            - var positions = ['left', 'center', 'right']
                         ul.product-slider__min-image-list
-                            each position in positions
-                                li.product-slider__min-image-item
-                                    img.product-slider__min-image(src="img/products/#{product.img}-min-#{position}.jpg" alt="#{product.name}" class="product-slider__min-image_#{position}")
-                    .product-name #{product.name}
+                            each position, index in positions
+                                li(class="product-slider__min-image-item" + ((index == 0) ? " product-slider__min-image-item_active" : ''))
+                                    img.product-slider__min-image(src="img/products/#{product.img}-#{position}.jpg" alt="#{product.name}" class="product-slider__min-image_#{position}")
+                        p.article
+                            span.article__text #{"Артикул "}
+                            span.article__number #{product.art}
                     .product-info
+                        p.product-name #{product.name}
                         - var infoKeys = {'Тип SIM-карты': product.simType, 'Количество SIM-карт': product.sim, 'Цвет': product.color, 'ОC': product.system, 'Связь 3G': product.has3g, '4G (LTE)': product.has4g, 'GPS-модуль': product.gps}
                         ul.product-info__list
                             each value, key in infoKeys
                                 li.product-info__item
                                     span.product-info__key #{key}
                                     span.product-info__value #{value}
+                        p.product-info__info #{product.info}
                         .product-rating
                             - var star = 0
                             ul.product-rating__list
                                 while star++ < 5
-                                    li.product-rating__star
-                            span.product-rating__count #{product.rating}
+                                    li.product-rating__star(class="" + ((star <= 4) ? " product-rating__star_active" : ''))
+                            .product-rating__count #{product.rating}
                     .product-buy
                         .product-buy__price #{product.price}
-                        .product-buy__stock
-                            .product-buy__indicator(class="product-buy__indicator_#{product.stock}")
-                            span.product-buy__text #{product.stockText}
-                        button.product-buy__button В корзину
+                            span.rouble г
+                        .product-buy__wrapper
+                            button.product-buy__button В корзину
+                            span.product-buy__stock(class="product-buy__stock_#{product.stock}") #{product.stockText}
     //Страницы
     nav.pages-nav
         - var pages = [1, 2, 3]
         ul.pages-nav__list
-            li.pages-nav__item <
-            each page in pages
-                li.pages-nav__item #{page}
-            li.pages-nav__item >
+            li.pages-nav__item
+                a.pages-nav__link(href="#" class="pages-nav__item_left") <
+            each page, index in pages
+                li.pages-nav__item
+                    a.pages-nav__link(href="#" class="" + ((index == 0) ? " pages-nav__link_active" : '')) #{page}
+            li.pages-nav__item
+                a.pages-nav__link(href="#" class="pages-nav__item_right") >

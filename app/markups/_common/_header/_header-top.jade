@@ -2,12 +2,12 @@
 .header-top
     .header-top__wrapper
         //Социалки
-        .socials
+        .socials(class="socials_header")
             - var socials = {'fb':'Facebook', 'vk':'Вконтакте', 'tw':'Twitter'}
-            ul.socials__list
+            ul.socials__list(class="socials__list_header")
                 each social, key in socials
-                    li.socials__item
-                        a(href="#" class="socials__link socials__link_#{key}" title="Сылка на #{social}") Сылка на #{social}
+                    li.socials__item(class="socials__list_header")
+                        a(href="//#{key}.com" class="socials__link socials__link_#{key}-header" title="Сылка на #{social}" target="_blank") Сылка на #{social}
         //Контакты
         .contacts
             - var contacts = {'map': 'ул. Маяковская 6, офис 17', 'telephone': '+7 (921) 123-12-13'}

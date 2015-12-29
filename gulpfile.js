@@ -21,7 +21,6 @@ gulp.task('sprite', function () {
             imgName: '../img/sprite.png',
             cssName: '_sprite.scss',
             cssFormat: 'css',
-            algorithm: 'top-down',
             cssOpts: {
                 cssSelector: function (item) {
                     var result = '.' + item.name,

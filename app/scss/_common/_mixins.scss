@@ -9,7 +9,7 @@
   }
 }
 
-@mixin before{
+@mixin before {
   display: block;
   content: '';
 }
@@ -18,13 +18,15 @@
   background: $orange-color;
   color: white;
 }
-@mixin main-central{
+
+@mixin main-central {
   width: 1100px;
   margin: auto;
   position: relative;
 }
 
-@mixin border($radius){
+@mixin border-back($radius, $back) {
   border: 1px solid $border-color;
   border-radius: #{$radius}px;
+  background-color: $back;
 }

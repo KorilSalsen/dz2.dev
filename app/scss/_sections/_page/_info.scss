@@ -1,0 +1,23 @@
+.info{
+  margin-bottom: 9px;
+}
+.info__title{
+  font-size: 20px;
+  font-family: $font-bold;
+  margin: 26px 0 18px;
+}
+.info__text{
+  text-indent: 37px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.info__wrapper{
+  .first{
+    padding-right: 18px;
+    box-sizing: border-box;
+  }
+  .last{
+    padding-left: 21px;
+    box-sizing: border-box;
+  }
+}

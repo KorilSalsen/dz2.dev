@@ -15,7 +15,7 @@ aside.sidebar
             ul.sidebar-list
                 each value, key in shops
                     li.sidebar-list__item
-                        input(type="radio" name="shop" id="input-#{key}" class="sidebar-list__input")
+                        input(checked type="radio" name="shop" id="input-#{key}" class="sidebar-list__input")
                         label(for="input-#{key}" class="sidebar-list__label sidebar-list__label_radio") #{value}
         //Бренды
         li.accordion-list__item

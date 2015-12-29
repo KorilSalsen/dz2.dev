@@ -1,3 +1,51 @@
 .footer{
   position: relative;
+  background: url("../img/footer.jpg");
+  color: white;
+}
+.logo_footer{
+  margin-top: -25px;
+}
+.footer__info{
+  @include main-central;
+  @include clearfix;
+  padding-bottom: 14px;
+}
+.socials_footer{
+  float: right;
+  margin-bottom: 26px;
+}
+.socials__item_footer{
+  margin: 36px 0 0 27px;
+}
+.navigate_footer{
+  float: right;
+}
+.navigate__list_footer{
+  float: right;
+  width: 555px;
+  text-align: right;
+ }
+.navigate__item_footer{
+  float: none;
+  display: inline-block;
+  margin: 0 0 13px 22px;
+}
+.navigate__link_footer{
+  color: white;
+  text-decoration: underline;
+  padding: 0;
+  font-size: 14px;
+}
+.navigate__link_footer:hover{
+  color: $orange-color;
+  background: none;
+}
+.footer__copyright{
+  text-align: center;
+  font-size: 12px;
+  line-height: 28px;
+  vertical-align: middle;
+  border-top: 1px solid #494949;
+  border-bottom: 1px solid #282828;
 }

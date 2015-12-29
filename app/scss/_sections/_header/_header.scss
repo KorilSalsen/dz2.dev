@@ -1,11 +1,56 @@
-.main-header{
+.main-header {
   font-size: 16px;
 }
-.header-nav, .header-top{
+
+.header-nav, .header-top {
   background: white;
   border-bottom: 2px solid #ebedef;
 }
-.header-top__wrapper, .header-bottom__wrapper, .navigate{
+
+.header-top__wrapper, .header-bottom__wrapper, .navigate {
   @include main-central;
   @include clearfix;
+}
+
+$logo-height: 36px;
+.logo {
+  position: absolute;
+  display: block;
+  font-size: 0;
+  height: $logo-height;
+  left: 0;
+  top: 50%;
+  margin-top: -$logo-height/2;
+}
+
+.logo__img {
+  display: block;
+}
+
+$links-height: 20px;
+.links {
+  position: absolute;
+  height: $links-height;
+  line-height: 100%;
+  right: 0;
+  top: 50%;
+  margin-top: -$links-height/2;
+}
+
+.links__list {
+  @include clearfix();
+}
+
+.links__item {
+  float: left;
+  margin-left: 33px;
+}
+
+.links__link {
+  text-decoration: underline;
+  font-family: $font-semibold;
+}
+
+.links__link:hover {
+  color: $orange-color;
 }

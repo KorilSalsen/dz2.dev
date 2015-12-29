@@ -5,8 +5,7 @@
   float: left;
 }
 .phone-classes-list, .accordion-list{
-  @include border(5);
-  background: $blocks-back;
+  @include border-back(5, $blocks-back);
 }
 .phone-classes-list{
   margin-bottom: 38px;
@@ -40,6 +39,14 @@
   font-size: 16px;
   font-family: $font-semibold;
   padding-bottom: 6px;
+  position: relative;
+}
+.sidebar-list-title:before{
+  @include before;
+  position: absolute;
+  top: 10px;
+  right: 11px - 30px;
+  cursor: pointer;
 }
 .sidebar-list__input{
   display: none;
