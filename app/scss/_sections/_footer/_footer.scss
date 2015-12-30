@@ -2,6 +2,8 @@
   position: relative;
   background: url("../img/footer.jpg");
   color: white;
+  height: $footer-height;
+  @include clearfix;
 }
 .logo_footer{
   margin-top: -25px;

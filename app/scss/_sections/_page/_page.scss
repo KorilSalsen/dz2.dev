@@ -1,7 +1,13 @@
+.page-wrapper{
+  min-height: 100%;
+  margin-bottom: -$footer-height;
+  position: relative;
+}
 .page{
   @include main-central;
   @include clearfix;
   font-size: 14px;
+  margin-bottom: $footer-height;
 }
 .content-wrapper{
   @include clearfix;

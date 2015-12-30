@@ -16,7 +16,7 @@ article.content
                     li.sort__item
                         a(href="#" class="sort__link sort__link_#{key}" + ((viewsIndex++ == 0) ? " sort__link sort__link_#{key}_active" : '') title="#{view}") #{view}
     //Товары
-    .goods(class="goods_table")
+    .goods(class="goods_pic")
         include ./_phones
         ul.goods__list
             each product in products
@@ -36,8 +36,9 @@ article.content
                         p.product-name #{product.name}
                         - var infoKeys = {'Тип SIM-карты': product.simType, 'Количество SIM-карт': product.sim, 'Цвет': product.color, 'ОC': product.system, 'Связь 3G': product.has3g, '4G (LTE)': product.has4g, 'GPS-модуль': product.gps}
                         ul.product-info__list
+                            - var infoIndex = 0
                             each value, key in infoKeys
-                                li.product-info__item
+                                li.product-info__item(class="" + ((infoIndex++%2 == 0) ? " product-info__item_dark" : ''))
                                     span.product-info__key #{key}
                                     span.product-info__value #{value}
                         p.product-info__info #{product.info}

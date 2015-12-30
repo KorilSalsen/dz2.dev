@@ -6,7 +6,7 @@
             - var socials = {'fb':'Facebook', 'vk':'Вконтакте', 'tw':'Twitter'}
             ul.socials__list(class="socials__list_header")
                 each social, key in socials
-                    li.socials__item(class="socials__list_header")
+                    li.socials__item(class="socials__item_header")
                         a(href="//#{key}.com" class="socials__link socials__link_#{key}-header" title="Сылка на #{social}" target="_blank") Сылка на #{social}
         //Контакты
         .contacts

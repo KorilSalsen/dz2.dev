@@ -1,14 +1,12 @@
-.navigate__list{
-  @include clearfix;
-}
 .navigate__item{
-  float: left;
+  display: inline-block;
+  margin-right: -0.35em;
 }
 .navigate__link{
   display: block;
   line-height: 20px;
   vertical-align: middle;
-  padding: 16px;
+  padding: 16px 17px;
 }
 .navigate__link:hover{
   background: $hover-gray;
