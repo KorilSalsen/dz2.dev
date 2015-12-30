@@ -103,18 +103,19 @@ $price-height: 30px;
   position: relative;
   margin-bottom: 15px;
 }
-.prise-slider__cursor{
+.ui-slider-handle{
   position: absolute;
   bottom: -12px;
   cursor: pointer;
+  margin-left: -4px;
 }
 .prise-slider__cursor_left {
-  left: -4px;
 }
-  .prise-slider__cursor_right{
+.prise-slider__cursor_right{
   right: -4px;
 }
-.prise-slider__inner{
+.ui-slider-range{
+  position: absolute;
   background: $orange-color;
   height: 3px;
 }

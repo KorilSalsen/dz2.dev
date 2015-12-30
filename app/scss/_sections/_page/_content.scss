@@ -54,6 +54,29 @@ $views: 'table', 'list', 'pic';
   float: right;
   margin-top: 66px;
  }
+.sort__select{
+  display: none;
+}
+.dropdown-wrapper{
+  width: 20px;
+  height: 20px;
+}
+.selection{
+  box-sizing: border-box;
+  padding: 5px 14px;
+  width: 143px;
+  height: 29px;
+  border: 1px solid #ebedef;
+  box-shadow: inset 0 1px 1px 0 rgba(148,148,148,0.43);
+  border-radius: 3px;
+  font-size: 14px;
+  font-family: $font-light;
+  color: $light-gray;
+  background: white;
+}
+.select2-container{
+  background: white;
+}
 .pages-nav__list{
   @include clearfix;
 }

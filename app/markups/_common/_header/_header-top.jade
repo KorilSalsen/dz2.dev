@@ -14,4 +14,4 @@
             ul.contacts__list
                 each contact, key in contacts
                     li.contacts__item
-                        a(href="#" class="contacts__link contacts__link_#{key}" title="#{contact}") #{contact}
+                        a(href="" + ((key == 'telephone') ? "callto:#{contact}" : "#") class="contacts__link contacts__link_#{key}" title="#{contact}") #{contact}

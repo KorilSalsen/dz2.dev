@@ -35,12 +35,9 @@ aside.sidebar
                 li.sidebar-list__item
                     each text, key in prise
                         label(for="input-#{key}" class="sidebar-list__label sidebar-list__label_text sidebar-list__label_#{key}") #{text}
-                        input(type="text" name="#{key}" id="input-#{key}" class="sidebar-list__input-text")
+                        input(type="text" name="#{key}" id="input-#{key}" class="sidebar-list__input-text sidebar-list__input-text_#{key}")
                 li.sidebar-list__item
                     .prise-slider
-                        .prise-slider__cursor(class="prise-slider__cursor_left")
-                        .prise-slider__cursor(class="prise-slider__cursor_right")
-                        .prise-slider__inner
         //Цвет
         li.accordion-list__item(class="accordion-list__item_color")
             .sidebar-list-title Цвет

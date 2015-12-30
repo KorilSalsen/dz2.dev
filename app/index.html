@@ -26,7 +26,7 @@
               <div class="contacts">
                 <ul class="contacts__list">
                   <li class="contacts__item"><a href="#" title="ул. Маяковская 6, офис 17" class="contacts__link contacts__link_map">ул. Маяковская 6, офис 17</a></li>
-                  <li class="contacts__item"><a href="#" title="+7 (921) 123-12-13" class="contacts__link contacts__link_telephone">+7 (921) 123-12-13</a></li>
+                  <li class="contacts__item"><a href="callto:+7 (921) 123-12-13" title="+7 (921) 123-12-13" class="contacts__link contacts__link_telephone">+7 (921) 123-12-13</a></li>
                 </ul>
               </div>
             </div>
@@ -132,16 +132,12 @@
                 <ul class="sidebar-list">
                   <li class="sidebar-list__item">
                     <label for="input-from" class="sidebar-list__label sidebar-list__label_text sidebar-list__label_from">от</label>
-                    <input type="text" name="from" id="input-from" class="sidebar-list__input-text">
+                    <input type="text" name="from" id="input-from" class="sidebar-list__input-text sidebar-list__input-text_from">
                     <label for="input-to" class="sidebar-list__label sidebar-list__label_text sidebar-list__label_to">до</label>
-                    <input type="text" name="to" id="input-to" class="sidebar-list__input-text">
+                    <input type="text" name="to" id="input-to" class="sidebar-list__input-text sidebar-list__input-text_to">
                   </li>
                   <li class="sidebar-list__item">
-                    <div class="prise-slider">
-                      <div class="prise-slider__cursor prise-slider__cursor_left"></div>
-                      <div class="prise-slider__cursor prise-slider__cursor_right"></div>
-                      <div class="prise-slider__inner"></div>
-                    </div>
+                    <div class="prise-slider"></div>
                   </li>
                 </ul>
               </li>
@@ -647,6 +643,8 @@
       </div>
     </footer>
     <script src="bower/jquery/dist/jquery.js"></script>
+    <script src="bower/select2/dist/js/select2.js"></script>
+    <script src="bower/jquery-ui/jquery-ui.js"></script>
     <script src="bower/jquery.columnizer/src/jquery.columnizer.js"></script>
     <script src="js/main.js"></script>
   </body>
