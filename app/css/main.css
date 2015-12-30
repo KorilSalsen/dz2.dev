@@ -122,6 +122,13 @@ Icon classes can be used entirely standalone. They are named after their origina
   height: 9px;
 }
 
+.prise-slider__cursor {
+  background-image: url(../img/sprite.png);
+  background-position: -524px -332px;
+  width: 8px;
+  height: 14px;
+}
+
 .product-rating__star {
   background-image: url(../img/sprite.png);
   background-position: 0px -322px;
@@ -145,35 +152,35 @@ Icon classes can be used entirely standalone. They are named after their origina
 
 .sidebar-list__input:checked + .sidebar-list__label_box:before {
   background-image: url(../img/sprite.png);
-  background-position: -435px -89px;
+  background-position: -269px -322px;
   width: 19px;
   height: 19px;
 }
 
 .sidebar-list__input:checked + .sidebar-list__label_radio:before {
   background-image: url(../img/sprite.png);
-  background-position: -269px -322px;
+  background-position: -180px -322px;
   width: 19px;
   height: 19px;
 }
 
 .sidebar-list__label_box:before {
   background-image: url(../img/sprite.png);
-  background-position: -180px -322px;
+  background-position: -435px -178px;
   width: 19px;
   height: 19px;
 }
 
 .sidebar-list__label_box:hover:before {
   background-image: url(../img/sprite.png);
-  background-position: -435px -178px;
+  background-position: -91px -322px;
   width: 19px;
   height: 19px;
 }
 
 .sidebar-list__label_radio:before {
   background-image: url(../img/sprite.png);
-  background-position: -91px -322px;
+  background-position: -435px -89px;
   width: 19px;
   height: 19px;
 }
@@ -183,13 +190,6 @@ Icon classes can be used entirely standalone. They are named after their origina
   background-position: -435px 0px;
   width: 19px;
   height: 19px;
-}
-
-.slider, .prise-slider:before, .prise-slider:after {
-  background-image: url(../img/sprite.png);
-  background-position: -524px -332px;
-  width: 8px;
-  height: 14px;
 }
 
 .socials__link_fb-footer:hover {
@@ -215,7 +215,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 
 .socials__link_fb-header {
   background-image: url(../img/sprite.png);
-  background-position: -194px -226px;
+  background-position: -339px -96px;
   width: 26px;
   height: 26px;
 }
@@ -243,7 +243,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 
 .socials__link_tw-header {
   background-image: url(../img/sprite.png);
-  background-position: -339px -96px;
+  background-position: -194px -226px;
   width: 26px;
   height: 26px;
 }
@@ -276,44 +276,44 @@ Icon classes can be used entirely standalone. They are named after their origina
   height: 26px;
 }
 
-.sort__link_list {
+.sort__link_list:hover, .active .sort__link_list {
   background-image: url(../img/sprite.png);
   background-position: -435px -267px;
   width: 16px;
   height: 16px;
 }
 
-.sort__link_list_active, .sort__link_list:hover {
+.sort__link_list {
   background-image: url(../img/sprite.png);
-  background-position: -344px -412px;
+  background-position: -258px -412px;
   width: 16px;
   height: 16px;
 }
 
-.sort__link_pic {
+.sort__link_pic:hover, .active .sort__link_pic {
   background-image: url(../img/sprite.png);
   background-position: -172px -412px;
   width: 16px;
   height: 16px;
 }
 
-.sort__link_pic_active, .sort__link_pic:hover {
+.sort__link_pic {
   background-image: url(../img/sprite.png);
   background-position: -86px -412px;
   width: 16px;
   height: 16px;
 }
 
-.sort__link_table {
+.sort__link_table:hover, .active .sort__link_table {
   background-image: url(../img/sprite.png);
   background-position: 0px -412px;
   width: 16px;
   height: 16px;
 }
 
-.sort__link_table_active, .sort__link_table:hover {
+.sort__link_table {
   background-image: url(../img/sprite.png);
-  background-position: -258px -412px;
+  background-position: -344px -412px;
   width: 16px;
   height: 16px;
 }
@@ -754,7 +754,7 @@ a {
   clear: both;
 }
 .goods_table .goods__item {
-  padding: 19px 22px;
+  padding: 19px 22px 19px 10px;
   box-sizing: border-box;
   height: 246px;
   box-shadow: inset 0 -1px 0 0 #dee1e4;
@@ -841,6 +841,9 @@ a {
 .goods_table .product-info__info {
   min-height: 80px;
   margin-bottom: 13px;
+}
+.goods_table .product-type {
+  display: none;
 }
 .goods_table .product-name {
   font-size: 16px;
@@ -951,7 +954,7 @@ a {
 }
 
 .goods_pic .goods__list {
-  margin-right: -19px;
+  margin-right: -40px;
 }
 .goods_pic .goods__list:before, .goods_pic .goods__list:after {
   content: '';
@@ -1030,6 +1033,9 @@ a {
 }
 .goods_pic .product-info {
   text-align: center;
+}
+.goods_pic .product-type {
+  display: none;
 }
 .goods_pic .product-name {
   font-size: 14px;
@@ -1143,6 +1149,122 @@ a {
 }
 .goods_pic .article {
   display: none;
+}
+
+.goods_list .goods__list {
+  border: 1px solid #dee1e4;
+  border-radius: 5px;
+  background-color: #fbfbfb;
+}
+.goods_list .goods__list:before, .goods_list .goods__list:after {
+  content: '';
+  display: table;
+}
+.goods_list .goods__list:after {
+  clear: both;
+}
+.goods_list .goods__item {
+  padding: 10px 13px 7px;
+  line-height: 33px;
+  height: 33px;
+  vertical-align: middle;
+  box-shadow: inset 0 -1px 0 0 #dee1e4;
+}
+.goods_list .goods__item:before, .goods_list .goods__item:after {
+  content: '';
+  display: table;
+}
+.goods_list .goods__item:after {
+  clear: both;
+}
+.goods_list .goods__item:last-child {
+  box-shadow: none;
+}
+.goods_list .goods__item:hover {
+  box-shadow: inset 0 -1px 0 0 #dee1e4, 0 0 0 1px #dee1e4, 0 1px 6px rgba(118, 118, 188, 0.4);
+}
+.goods_list .product-slider, .goods_list .product-info, .goods_list .product-buy, .goods_list .product-buy__price, .goods_list .product-buy__wrapper, .goods_list .product-type, .goods_list .product-name {
+  display: inline-block;
+  vertical-align: middle;
+}
+.goods_list .product-slider__main-wrapper, .goods_list .product-slider__min-image-list, .goods_list .product-info__list, .goods_list .product-info__info, .goods_list .product-rating {
+  display: none;
+}
+.goods_list .product-info {
+  padding: 0 7px;
+}
+.goods_list .product-name {
+  width: 215px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.goods_list .product-buy {
+  float: right;
+}
+.goods_list .product-buy__price {
+  font-size: 18px;
+  font-family: "Open Sans Semibold", sans-serif;
+  margin-right: 21px;
+  height: 26px;
+  line-height: 100%;
+}
+.goods_list .product-buy__wrapper {
+  position: relative;
+  width: 205px;
+  height: 33px;
+}
+.goods_list .product-buy__button {
+  position: absolute;
+  right: 0;
+  border: 1px solid #dee1e4;
+  border-radius: 4px;
+  background-color: #ff6600;
+  border: none;
+  padding: 6px 14px;
+  color: white;
+  font-family: "Open Sans Bold", sans-serif;
+  cursor: pointer;
+}
+.goods_list .product-buy__button:hover {
+  background: #ff751a;
+}
+.goods_list .product-buy__button:active {
+  background: #ff6600;
+}
+.goods_list .product-buy__stock {
+  position: absolute;
+  left: 15px;
+  color: #7f7f7f;
+  font-size: 12px;
+  font-family: "Open Sans Bold", sans-serif;
+  float: right;
+}
+.goods_list .product-buy__stock:before {
+  display: block;
+  content: '';
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  margin-top: -3.5px;
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+}
+.goods_list .product-buy__stock_on-stock:before {
+  background: #60ac49;
+}
+.goods_list .article {
+  text-align: center;
+  font-size: 12px;
+}
+.goods_list .article__text {
+  font-family: "Open Sans Bold", sans-serif;
+  color: #7f7f7f;
+}
+.goods_list .article__number {
+  font-family: "Open Sans Semibold", sans-serif;
+  font-size: 14px;
 }
 
 .info {
@@ -1274,6 +1396,11 @@ a {
   top: 10px;
   right: -19px;
   cursor: pointer;
+  transition: all 0.2s;
+}
+
+.sidebar-list-title_close:before {
+  transform: rotate(180deg);
 }
 
 .sidebar-list__input {
@@ -1340,19 +1467,17 @@ a {
   margin-bottom: 15px;
 }
 
-.prise-slider:before, .prise-slider:after {
-  display: block;
-  content: '';
+.prise-slider__cursor {
   position: absolute;
   bottom: -12px;
   cursor: pointer;
 }
 
-.prise-slider:before {
+.prise-slider__cursor_left {
   left: -4px;
 }
 
-.prise-slider:after {
+.prise-slider__cursor_right {
   right: -4px;
 }
 
@@ -1388,7 +1513,7 @@ a {
 }
 
 .sidebar-list__item-color_gray {
-  background: ##ccc;
+  background: #ccc;
 }
 
 .sidebar-list__item-color_black {

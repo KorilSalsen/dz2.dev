@@ -46,8 +46,8 @@ $sort-height: 51px;
 }
 $views: 'table', 'list', 'pic';
 @each $view in $views{
-  .sort__link_#{$view}:hover{
-    @extend .sort__link_#{$view}_active;
+  .active .sort__link_#{$view}{
+    @extend .sort__link_#{$view}:hover;
   }
 }
 .pages-nav{

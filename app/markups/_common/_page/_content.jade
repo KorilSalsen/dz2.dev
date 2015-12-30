@@ -13,10 +13,10 @@ article.content
             - var viewsIndex = 0
             ul.sort__list
                 each view, key in views
-                    li.sort__item
-                        a(href="#" class="sort__link sort__link_#{key}" + ((viewsIndex++ == 0) ? " sort__link sort__link_#{key}_active" : '') title="#{view}") #{view}
+                    li.sort__item(class="" + ((viewsIndex++ == 0) ? " active" : ''))
+                        a(href="#" class="sort__link sort__link_#{key}" title="#{view}" data-view="#{key}") #{view}
     //Товары
-    .goods(class="goods_pic")
+    .goods(class="goods_table")
         include ./_phones
         ul.goods__list
             each product in products
@@ -33,6 +33,7 @@ article.content
                             span.article__text #{"Артикул "}
                             span.article__number #{product.art}
                     .product-info
+                        p.product-type #{"Смартфон"}
                         p.product-name #{product.name}
                         - var infoKeys = {'Тип SIM-карты': product.simType, 'Количество SIM-карт': product.sim, 'Цвет': product.color, 'ОC': product.system, 'Связь 3G': product.has3g, '4G (LTE)': product.has4g, 'GPS-модуль': product.gps}
                         ul.product-info__list

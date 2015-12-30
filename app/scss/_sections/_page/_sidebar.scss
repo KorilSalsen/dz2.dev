@@ -47,6 +47,10 @@
   top: 10px;
   right: 11px - 30px;
   cursor: pointer;
+  transition: all 0.2s;
+}
+.sidebar-list-title_close:before{
+  transform: rotate(180deg);
 }
 .sidebar-list__input{
   display: none;
@@ -99,17 +103,15 @@ $price-height: 30px;
   position: relative;
   margin-bottom: 15px;
 }
-.prise-slider:before, .prise-slider:after{
-  @include before;
+.prise-slider__cursor{
   position: absolute;
-  @extend .slider;
   bottom: -12px;
   cursor: pointer;
 }
-.prise-slider:before{
+.prise-slider__cursor_left {
   left: -4px;
 }
-.prise-slider:after{
+  .prise-slider__cursor_right{
   right: -4px;
 }
 .prise-slider__inner{
@@ -135,7 +137,7 @@ $price-height: 30px;
   color: blueviolet;
 }
 $colors: 'white', 'gray', 'black', 'darkblue', 'red', 'yellow', 'orange', 'green', 'blue', 'violet', 'pink', 'brown';
-$colors-hash: 'fff', '#ccc', '000', '0a3153', 'ff1800', 'fff343', 'fb914a', '92c37c', '40a6ff', '9870ad', 'dc78ad', '7f401d';
+$colors-hash: 'fff', 'ccc', '000', '0a3153', 'ff1800', 'fff343', 'fb914a', '92c37c', '40a6ff', '9870ad', 'dc78ad', '7f401d';
 $i: 1;
 @each $color in $colors{
   .sidebar-list__item-color_#{$color}{
