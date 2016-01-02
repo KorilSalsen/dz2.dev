@@ -10,7 +10,7 @@ aside.sidebar
     ul.accordion-list
         //Наличие
         li.accordion-list__item
-            .sidebar-list-title Наличие в магазинах
+            a(href="#" class="sidebar-list-title") Наличие в магазинах
             - var shops = {'all-shops': 'Во всех магазинах','local-shops': 'В ближайшем ко мне магазине'}
             ul.sidebar-list
                 each value, key in shops
@@ -19,7 +19,7 @@ aside.sidebar
                         label(for="input-#{key}" class="sidebar-list__label sidebar-list__label_radio") #{value}
         //Бренды
         li.accordion-list__item
-            .sidebar-list-title Бренды
+            a(href="#" class="sidebar-list-title") Бренды
             - var brends = {'lenovo': 'Lenovo', 'apple': 'Apple', 'samsung': 'Samsung', 'asus': 'Asus', 'motorola': 'Motorola'}
             ul.sidebar-list
                 each brend, key in brends
@@ -29,7 +29,7 @@ aside.sidebar
             a(href="#" class="clear-filter") Сбросить фильтр
         //Цена
         li.accordion-list__item
-            .sidebar-list-title Цена
+            a(href="#" class="sidebar-list-title") Цена
             - var prise = {'from': 'от', 'to': 'до'}
             ul.sidebar-list
                 li.sidebar-list__item
@@ -37,17 +37,17 @@ aside.sidebar
                         label(for="input-#{key}" class="sidebar-list__label sidebar-list__label_text sidebar-list__label_#{key}") #{text}
                         input(type="text" name="#{key}" id="input-#{key}" class="sidebar-list__input-text sidebar-list__input-text_#{key}")
                 li.sidebar-list__item
-                    .prise-slider
+                    .prise-slider(data-min="100" data-max="35000")
         //Цвет
         li.accordion-list__item(class="accordion-list__item_color")
-            .sidebar-list-title Цвет
+            a(href="#" class="sidebar-list-title") Цвет
             - var colors = ['white', 'gray', 'black', 'darkblue', 'red', 'yellow', 'orange', 'green', 'blue', 'violet', 'pink', 'brown']
             ul.sidebar-list
                 each color, index in colors
                     li.sidebar-list__item(class="sidebar-list__item-color sidebar-list__item-color_#{color}" + ((index == 1) ? " sidebar-list__item-color_active" : ''))
         //Операционные система
         li.accordion-list__item
-            .sidebar-list-title Операционные системы
+            a(href="#" class="sidebar-list-title") Операционные системы
             - var systems = {'android': 'Android', 'ios': 'iOS', 'windows': 'Windows Phone', 'symbian': 'Symbian', 'custom': 'Custom'}
             ul.sidebar-list
                 each system, key in systems

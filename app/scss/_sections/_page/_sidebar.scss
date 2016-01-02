@@ -6,6 +6,7 @@
 }
 .phone-classes-list, .accordion-list{
   @include border-back(5, $blocks-back);
+  overflow: hidden;
 }
 .phone-classes-list{
   margin-bottom: 38px;
@@ -25,8 +26,14 @@
   vertical-align: middle;
   padding: 14px 30px;
 }
+.phone-classes-list__link:hover{
+  background: lighten($blocks-back, 5%);
+}
 .phone-classes-list__link_active{
   background-color: #d9e5ea;
+}
+.phone-classes-list__link_active:hover{
+  background: lighten(#d9e5ea, 5%);
 }
 .accordion-list__item{
   padding: 9px 30px;
@@ -36,6 +43,7 @@
   @include clearfix;
 }
 .sidebar-list-title{
+  display: block;
   font-size: 16px;
   font-family: $font-semibold;
   padding-bottom: 6px;
@@ -59,6 +67,7 @@
   padding-left: 29px;
   display: block;
   position: relative;
+  cursor: pointer;
 }
 .sidebar-list__label:before{
   @include before;
@@ -129,6 +138,7 @@ $price-height: 30px;
   float: left;
   border: 1px solid $border-color;
   margin: 10px 21px 12px 0;
+  cursor: pointer;
 }
 .sidebar-list__item-color:hover{
   box-shadow: 0 0 1px 1px $orange-color;

@@ -4,15 +4,15 @@ html(lang='ru')
         meta(charset='UTF-8')
         meta(http-equiv='X-UA-Compatible', content="IE=edge,chrome=1")
         meta(name='viewport' content='width=device-width')
+        link(rel="stylesheet" href="bower/normalize-css/normalize.css")
         link(rel="stylesheet" href="css/main.css")
         block title
     body
         .page-wrapper
             header.main-header
-                .main-header__inner
-                    include _common/_header/_header-top
-                    include _common/_header/_header-bottom
-                    include _common/_header/_header-nav
+                include _common/_header/_header-top
+                include _common/_header/_header-bottom
+                include _common/_header/_header-nav
             section.page
                 block page
         footer.footer

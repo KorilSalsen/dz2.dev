@@ -57,14 +57,9 @@ $views: 'table', 'list', 'pic';
 .sort__select{
   display: none;
 }
-.dropdown-wrapper{
-  width: 20px;
-  height: 20px;
-}
-.selection{
-  box-sizing: border-box;
-  padding: 5px 14px;
-  width: 143px;
+.select2{
+  display: inline-block;
+  width: 143px !important;
   height: 29px;
   border: 1px solid #ebedef;
   box-shadow: inset 0 1px 1px 0 rgba(148,148,148,0.43);
@@ -73,9 +68,49 @@ $views: 'table', 'list', 'pic';
   font-family: $font-light;
   color: $light-gray;
   background: white;
+  cursor: pointer;
+  vertical-align: middle;
+  line-height: 21px;
+  position: relative;
+  margin-left: 4px;
 }
-.select2-container{
+.select2-selection__arrow{
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  transition: all 0.2s;
+}
+.select2-container--open .select2-selection__arrow{
+  transform: rotate(180deg);
+}
+.select2-search{
+  display: none;
+}
+.selection, .select2-selection, .select2-selection__rendered{
+  display: inline-block;
+  width: 100%;
+}
+.select2-selection{
+  padding: 3px 27px 3px 14px;
+  box-sizing: border-box;
+}
+.select2-selection__rendered{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+body > .select2-container--open{
+  border-radius: 2px;
   background: white;
+  padding: 5px 14px;
+  box-shadow: 0 1px 5px 0 rgba(134,134,134,0.75);
+  margin-top: 3px;
+  font-size: 14px;
+  color: $light-gray;
+}
+.select2-results__option:hover{
+  cursor: pointer;
+ color: $font-color;
 }
 .pages-nav__list{
   @include clearfix;

@@ -5,13 +5,14 @@
   font-size: 20px;
   font-family: $font-bold;
   margin: 26px 0 18px;
-}
-.info__text{
-  text-indent: 37px;
-  text-align: justify;
-  margin-bottom: 20px;
+  font-weight: normal;
 }
 .info__wrapper{
+  p{
+    text-indent: 37px;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
   @include clearfix;
   .first{
     padding-right: 18px;

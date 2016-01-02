@@ -43,12 +43,12 @@ article.content
                                     span.product-info__key #{key}
                                     span.product-info__value #{value}
                         p.product-info__info #{product.info}
-                        .product-rating
+                        .product-rating(data-rating="#{product.rating}" )
                             - var star = 0
                             ul.product-rating__list
                                 while star++ < 5
-                                    li.product-rating__star(class="" + ((star <= 4) ? " product-rating__star_active" : ''))
-                            .product-rating__count #{product.rating}
+                                    li.product-rating__star
+                            .product-rating__count
                     .product-buy
                         .product-buy__price #{product.price}
                             span.rouble г

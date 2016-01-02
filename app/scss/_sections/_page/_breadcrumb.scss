@@ -1,11 +1,10 @@
 .breadcrumb{
-  box-sizing: border-box;
-  height: 121px;
-  padding-top: 28px;
+  margin-bottom: 27px;
 }
 .breadcrumb__list{
   @include clearfix;
   font-size: 14px;
+  margin-bottom: 18px;
 }
 .breadcrumb__item{
   float: left;
@@ -32,5 +31,5 @@
 .catalog-title{
   font-size: 20px;
   font-family: $font-bold;
-  margin-top: 16px;
+  font-weight: normal;
 }

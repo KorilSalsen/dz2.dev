@@ -9,12 +9,6 @@ Icon classes can be used entirely standalone. They are named after their origina
 <img class="icon-home" />
 ```
 */
-.bottom-arrow {
-  background-image: url(../img/sprite.png);
-  background-position: -524px -253px;
-  width: 13px;
-  height: 9px;
-}
 .contacts__link_map:before {
   background-image: url(../img/sprite.png);
   background-position: -524px -81px;
@@ -51,6 +45,12 @@ Icon classes can be used entirely standalone. They are named after their origina
   width: 16px;
   height: 15px;
 }
+.select2-selection__arrow {
+  background-image: url(../img/sprite.png);
+  background-position: -524px -253px;
+  width: 13px;
+  height: 9px;
+}
 .sidebar-list-title:before {
   background-image: url(../img/sprite.png);
   background-position: -524px 0px;
@@ -59,31 +59,31 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .sidebar-list__input:checked + .sidebar-list__label_box:before {
   background-image: url(../img/sprite.png);
-  background-position: -435px -89px;
+  background-position: -435px -178px;
   width: 19px;
   height: 19px;
 }
 .sidebar-list__input:checked + .sidebar-list__label_radio:before {
   background-image: url(../img/sprite.png);
-  background-position: -435px 0px;
+  background-position: -435px -89px;
   width: 19px;
   height: 19px;
 }
 .sidebar-list__label_box:before {
   background-image: url(../img/sprite.png);
-  background-position: -269px -322px;
+  background-position: -435px 0px;
   width: 19px;
   height: 19px;
 }
 .sidebar-list__label_box:hover:before {
   background-image: url(../img/sprite.png);
-  background-position: -180px -322px;
+  background-position: -269px -322px;
   width: 19px;
   height: 19px;
 }
 .sidebar-list__label_radio:before {
   background-image: url(../img/sprite.png);
-  background-position: -435px -178px;
+  background-position: -180px -322px;
   width: 19px;
   height: 19px;
 }
@@ -95,13 +95,13 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .socials__link_fb-footer:hover {
   background-image: url(../img/sprite.png);
-  background-position: -226px -113px;
+  background-position: 0px 0px;
   width: 43px;
   height: 43px;
 }
 .socials__link_fb-footer {
   background-image: url(../img/sprite.png);
-  background-position: 0px 0px;
+  background-position: -226px -113px;
   width: 43px;
   height: 43px;
 }
@@ -167,25 +167,25 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .sort__link_list:hover {
   background-image: url(../img/sprite.png);
-  background-position: -86px -412px;
+  background-position: -344px -412px;
   width: 16px;
   height: 16px;
 }
 .sort__link_list {
   background-image: url(../img/sprite.png);
-  background-position: -172px -412px;
+  background-position: -86px -412px;
   width: 16px;
   height: 16px;
 }
 .sort__link_pic:hover {
   background-image: url(../img/sprite.png);
-  background-position: 0px -412px;
+  background-position: -172px -412px;
   width: 16px;
   height: 16px;
 }
 .sort__link_pic {
   background-image: url(../img/sprite.png);
-  background-position: -435px -267px;
+  background-position: 0px -412px;
   width: 16px;
   height: 16px;
 }
@@ -197,7 +197,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .sort__link_table {
   background-image: url(../img/sprite.png);
-  background-position: -344px -412px;
+  background-position: -435px -267px;
   width: 16px;
   height: 16px;
 }
