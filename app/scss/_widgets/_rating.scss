@@ -1,0 +1,29 @@
+.product-rating__list, .product-rating__star, .product-rating__count{
+  float: left;
+}
+.product-rating{
+  display: inline-block;
+}
+.product-rating__list{
+  height: 16px;
+  margin-right: 9px;
+}
+.product-rating__star{
+  margin-right: 4px;
+}
+.product-rating__count{
+  width: 28px;
+  height: 15px;
+  border-radius: 8px;
+  background-color: #b5beca;
+  color: white;
+  text-align: center;
+  line-height: 100%;
+  vertical-align: middle;
+  margin-top: 2px;
+}
+.goods_list{
+  .product-rating{
+    display: none;
+  }
+}

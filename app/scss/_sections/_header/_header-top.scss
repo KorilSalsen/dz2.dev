@@ -50,6 +50,10 @@ $icon-left: 20px;
   position: relative;
 }
 
+.contacts__link:hover{
+  color: $orange-color;
+}
+
 .contacts__link:before {
   @include before;
   position: absolute;

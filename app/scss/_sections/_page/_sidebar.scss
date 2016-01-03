@@ -4,17 +4,17 @@
   margin-right: 24px;
   float: left;
 }
-.phone-classes-list, .accordion-list{
+.phone-classes-list{
   @include border-back(5, $blocks-back);
   overflow: hidden;
 }
 .phone-classes-list{
   margin-bottom: 38px;
 }
-.phone-classes-list__item, .accordion-list__item{
+.phone-classes-list__item{
   border-bottom: 1px solid $border-color;
 }
-.phone-classes-list__item:last-child, .accordion-list__item:last-child{
+.phone-classes-list__item:last-child{
   border-bottom: none;
 }
 .phone-classes-list__link{
@@ -34,9 +34,6 @@
 }
 .phone-classes-list__link_active:hover{
   background: lighten(#d9e5ea, 5%);
-}
-.accordion-list__item{
-  padding: 9px 30px;
 }
 .sidebar-list__item{
   padding: 9px 0;
@@ -105,31 +102,6 @@ $price-height: 30px;
   box-shadow: inset 0 1px 1px 0 rgba(148,148,148,0.43);
   border-radius: 3px;
   margin-left: 14px;
-}
-.prise-slider{
-  height: 3px;
-  background-color: #dee1e4;
-  position: relative;
-  margin-bottom: 15px;
-}
-.ui-slider-handle{
-  position: absolute;
-  bottom: -12px;
-  cursor: pointer;
-  margin-left: -4px;
-}
-.prise-slider__cursor_left {
-}
-.prise-slider__cursor_right{
-  right: -4px;
-}
-.ui-slider-range{
-  position: absolute;
-  background: $orange-color;
-  height: 3px;
-}
-.accordion-list__item_color{
-  padding-bottom: 5px;
 }
 .sidebar-list__item-color{
   width: 36px;

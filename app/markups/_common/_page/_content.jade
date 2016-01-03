@@ -29,7 +29,7 @@ article.content
                             each position, index in positions
                                 li(class="product-slider__min-image-item" + ((index == 0) ? " product-slider__min-image-item_active" : ''))
                                     img.product-slider__min-image(src="img/products/#{product.img}-#{position}.jpg" alt="#{product.name}" class="product-slider__min-image_#{position}")
-                        p.article
+                        .article
                             span.article__text #{"Артикул "}
                             span.article__number #{product.art}
                     .product-info
@@ -60,9 +60,9 @@ article.content
         - var pages = [1, 2, 3]
         ul.pages-nav__list
             li.pages-nav__item
-                a.pages-nav__link(href="#" class="pages-nav__item_left") <
+                a.pages-nav__link(href="#" class="pages-nav__item_left") &lt;
             each page, index in pages
                 li.pages-nav__item
                     a.pages-nav__link(href="#" class="" + ((index == 0) ? " pages-nav__link_active" : '')) #{page}
             li.pages-nav__item
-                a.pages-nav__link(href="#" class="pages-nav__item_right") >
+                a.pages-nav__link(href="#" class="pages-nav__item_right") &gt;

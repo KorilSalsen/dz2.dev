@@ -8,7 +8,7 @@
     @include border-back(5, $blocks-back);
   }
   .goods__item{
-    padding: 19px 10px 19px 22px;
+    padding: 19px 10px 15px 22px;
     box-sizing: border-box;
     min-height: 246px;
     box-shadow: inset 0 -1px 0 0 $border-color;
@@ -23,68 +23,22 @@
     0 0 0 1px $border-color,
     0 1px 6px rgba(118,118,188,0.4);
   }
-   .product-slider__min-image-item, .product-rating__list, .product-rating__star, .product-rating__count{
-     float: left;
-  }
-  .product-slider, .product-info, .product-buy, {
+  .product-info, .product-buy, {
     display: inline-block;
     margin-right: -0.3em;
     vertical-align: top;
   }
-  .product-slider{
-    width: 136px;
-    overflow: hidden;
+  .product-info{
+    box-sizing: border-box;
+    width: 436px;
+    padding: 4px 26px;
   }
   .product-info__list{
     display: none;
   }
-  .product-slider__main-image, .product-slider__min-image{
-    display: block;
-    font-size: 10px;
-    line-height: 10px
-  }
-  .product-slider__main-wrapper, .product-slider__min-image-item{
-    position: relative;
-    overflow: hidden;
-    @include border-back(2,#fff);
-  }
-  .product-slider__main-wrapper{
-    margin-bottom: 15px;
-    width: 134px;
-    height: 134px;
-  }
-  .product-slider__main-image, .product-slider__min-image{
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    border:none;
-  }
-  .product-slider__min-image-list{
-    @include clearfix;
-  }
-  .product-slider__min-image-item{
-    width: 32px;
-    height: 32px;
-    margin: 0 17px 7px 0;
-    cursor: pointer;
-  }
-  .product-slider__min-image-item:last-child{
-    margin: 0;
-  }
-  .product-slider__min-image-item_active{
-    border-color: $orange-color;
-  }
-  .product-info{
-    box-sizing: border-box;
-    width: 433px;
-    padding: 4px 26px;
-  }
   .product-info__info{
     margin-bottom: 13px;
+    min-height: 80px;
   }
   .product-type{
     display: none;
@@ -93,23 +47,6 @@
     font-size: 16px;
     font-family: $font-semibold;
     margin-bottom: 20px;
-  }
-  .product-rating{
-    @include clearfix;
-  }
-  .product-rating__star{
-    margin-right: 4px;
-  }
-  .product-rating__count{
-    width: 28px;
-    height: 15px;
-    border-radius: 8px;
-    background-color: #b5beca;
-    color: white;
-    text-align: center;
-    line-height: 100%;
-    vertical-align: middle;
-    margin: 2px 0 0 4px;
   }
   .product-buy{
     border-left: 1px solid $border-color;
@@ -139,6 +76,7 @@
     font-family: $font-bold;
     margin-bottom: 5px;
     cursor: pointer;
+    float: right;
   }
   .product-buy__button:hover{
     background: lighten($orange-color, 5%);
@@ -167,18 +105,6 @@
   .product-buy__stock_on-stock:before{
     background: #60ac49;
   }
-  .article{
-    text-align: center;
-    font-size: 12px;
-  }
-  .article__text{
-    font-family: $font-bold;
-    color: $light-gray;
-  }
-  .article__number{
-    font-family: $font-semibold;
-    font-size: 14px;
-  }
 }
 
 .goods_pic{
@@ -197,54 +123,6 @@
   }
   .goods__item:hover{
     box-shadow: 0 1px 6px rgba(118,118,188,0.4);
-  }
-   .product-slider__min-image-item, .product-rating__list, .product-rating__star, .product-rating__count{
-     float: left;
-  }
-  .product-slider{
-    width: 136px;
-    margin: 0 auto 6px;
-    overflow: hidden;
-  }
-  .product-slider__main-image, .product-slider__min-image{
-    display: block;
-    font-size: 10px;
-    line-height: 10px
-  }
-  .product-slider__main-wrapper, .product-slider__min-image-item{
-    position: relative;
-    overflow: hidden;
-    @include border-back(2,#fff);
-  }
-  .product-slider__main-wrapper{
-    margin-bottom: 15px;
-    width: 134px;
-    height: 134px;
-  }
-  .product-slider__main-image, .product-slider__min-image{
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    border:none;
-  }
-  .product-slider__min-image-list{
-    @include clearfix;
-  }
-  .product-slider__min-image-item{
-    width: 32px;
-    height: 32px;
-    margin: 0 17px 7px 0;
-    cursor: pointer;
-  }
-  .product-slider__min-image-item:last-child{
-    margin: 0;
-  }
-  .product-slider__min-image-item_active{
-    border-color: $orange-color;
   }
   .product-info{
     text-align: center;
@@ -276,26 +154,6 @@
   .product-info__info{
     display: none;
   }
-  .product-rating{
-    display: inline-block;
-  }
-  .product-rating__list{
-    height: 16px;
-  }
-  .product-rating__star{
-    margin-right: 4px;
-  }
-  .product-rating__count{
-    width: 28px;
-    height: 15px;
-    border-radius: 8px;
-    background-color: #b5beca;
-    color: white;
-    text-align: center;
-    line-height: 100%;
-    vertical-align: middle;
-    margin: 2px 0 0 4px;
-  }
   .product-buy{
     @include clearfix;
     position: relative;
@@ -312,6 +170,7 @@
   .product-buy__button{
     position: absolute;
     right: 0;
+    top: 2px;
     @include border-back(4, $orange-color);
     border: none;
     padding: 6px 14px;
@@ -360,8 +219,8 @@
   }
   .goods__item{
     padding: 10px 13px 7px;
-    line-height: 33px;
-    height: 33px;
+    line-height: 34px;
+    height: 34px;
     vertical-align: middle;
     box-shadow: inset 0 -1px 0 0 $border-color;
     @include clearfix;
@@ -374,15 +233,15 @@
     0 0 0 1px $border-color,
     0 1px 6px rgba(118,118,188,0.4);
   }
-  .product-slider, .product-info, .product-buy, .product-buy__price, .product-buy__wrapper, .product-type, .product-name{
+  .product-info, .product-buy, .product-buy__price, .product-buy__wrapper, .product-type, .product-name{
     display: inline-block;
     vertical-align: middle;
   }
-  .product-slider__main-wrapper, .product-slider__min-image-list, .product-info__list, .product-info__info, .product-rating{
+  .product-info__list, .product-info__info{
     display: none;
   }
   .product-info{
-    padding: 0 7px;
+    padding: 0 9px 0 12px;
   }
   .product-name{
     width: 215px;
@@ -396,14 +255,14 @@
   .product-buy__price{
     font-size: 18px;
     font-family: $font-semibold;
-    margin-right: 21px;
     height: 26px;
     line-height: 100%;
+    min-width: 93px;
   }
   .product-buy__wrapper{
     position: relative;
     width: 205px;
-    height: 33px;
+    height: 34px;
   }
   .product-buy__button{
     position: absolute;
@@ -442,17 +301,5 @@
   }
   .product-buy__stock_on-stock:before{
     background: #60ac49;
-  }
-  .article{
-    text-align: center;
-    font-size: 12px;
-  }
-  .article__text{
-    font-family: $font-bold;
-    color: $light-gray;
-  }
-  .article__number{
-    font-family: $font-semibold;
-    font-size: 14px;
   }
 }

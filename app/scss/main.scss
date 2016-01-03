@@ -9,6 +9,10 @@
 
 @import "_layout/adjustment";
 
+/* --------- widgets --------- */
+
+@import "_widgets/**/*";
+
 /* --------- sections --------- */
 
 @import "_sections/_header/**/*";

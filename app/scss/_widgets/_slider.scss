@@ -1,0 +1,22 @@
+.prise-slider{
+  height: 3px;
+  background-color: #dee1e4;
+  position: relative;
+  margin-bottom: 15px;
+}
+.ui-slider-handle{
+  position: absolute;
+  bottom: -12px;
+  cursor: pointer;
+  margin-left: -4px;
+}
+.prise-slider__cursor_left {
+}
+.prise-slider__cursor_right{
+  right: -4px;
+}
+.ui-slider-range{
+  position: absolute;
+  background: $orange-color;
+  height: 3px;
+}

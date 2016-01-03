@@ -1,0 +1,16 @@
+.accordion-list{
+  @include border-back(5, $blocks-back);
+  overflow: hidden;
+}
+.accordion-list__item{
+  padding: 9px 30px;
+}
+.accordion-list__item:last-child{
+  border-bottom: none;
+}
+.accordion-list__item{
+  border-bottom: 1px solid $border-color;
+}
+.accordion-list__item_color{
+  padding-bottom: 5px;
+}
